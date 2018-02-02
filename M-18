@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 import LINETCR
 from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
@@ -7,23 +6,23 @@ import time,random,sys,json,codecs,threading,glob,requests,urllib
 #import time,random,sys,json,codecs,threading,glob,re
 
 cl = LINETCR.LINE()
-cl.login(token="EnpHgjzyz5WI48XdiquM5.0KR2p9yTfmo+J3gD/aW3rq.HkMXyTK4Op+rqe33EBquYkRGImQrnZVvPfiKl+3TKQ8=")
+cl.login(token="EnHgjzyz5WI48XdiquM5.0KR2p9yTfmo+J3gD/aW3rq.HkMXyTK4Op+rqe33EBquYkRGImQrnZVvPfiKl+3TKQ8=")
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(token="EnaEkbcrKOZFzpLJkuzc.HoR1JnsB+4qeb6VJ+e21Na.Q13P4kUwtIkXjn9pqL4tJJ9ExxfE/i0Z25ziXhNBrXw=")
+ki.login(token="EnTeWFArczZluSiMbprc.HoR1JnsB+4qeb6VJ+e21Na.OYO6OQOngCQ4HHgPfr89kI1RQRk0NzWtRxUIH9GjiMA=")
 ki.loginResult()
 
 kk = LINETCR.LINE()
-kk.login(token="Enj3iOQpLSOnEMx1BP31.0yBG21qsxOytdiizPZNOOq.sVSeBJMaqjzK9NqNBHImxPpNMmV3lgrpNsb/AiG4rk8=")
+kk.login(token="EnbErhJU9s8AFSEH2v91.0yBG21qsxOytdiizPZNOOq.jFKXCZ3/3cGlzdjAgvk6wRTtDR/y/I3TCSGwMDkUrFU=")
 kk.loginResult()
 
 kc = LINETCR.LINE()
-kc.login(token="EnICR4P4CWGqpItdzdua.TvetDTQOiFfoCjE8lx6qQG.Y9f6QQYUYavA3vnb7JxLGkJD/eV+305KwB08P+s4KlI=")
+kc.login(token="EnISRJmpFIlt4vAepema.TvetDTQOiFfoCjE8lx6qQG.Nh+A4SHPj08YnBhtOEggufiOcXE2KwNA63Pg/fYfwjk=")
 kc.loginResult()
 
 kd = LINETCR.LINE()
-kd.login(token="EnkUIAvSBBU6Q9cHSAj3.k4Za5/UEgS3xASuSVtbn4W.dYGmqwYzICVA/BNwGLbdKLBEN2/XfeM6yJ0ARHKqHsY=")
+kd.login(token="EneXjtmxTWBTh1vPa193.k4Za5/UEgS3xASuSVtbn4W.wmw0lEhkelsAUu582EAbJyng2jYrnmJD2djCa9iEa3k=")
 kd.loginResult()
 
 ke = LINETCR.LINE()
@@ -39,19 +38,19 @@ kg.login(token="EnQn29gmazTjPGFDY0b2.GEJaLf18HIrlmEJ3dKxw4G.218UbCeF+/cWWPjd5rrU
 kg.loginResult()
 
 kh = LINETCR.LINE()
-kh.login(token="EnlMlVc9Y0g9HQTKCHJb.R+TwP1t4enhkFeLLHqn0sW.hZjZc3e11qBc+GAFbKwz21e0gejGhSsO66wOuNPUPqk=")
+kh.login(token="EnP79w32MHjVLpnjFAUb.R+TwP1t4enhkFeLLHqn0sW.H8rNiCk3KJ4P3CsNexMA0g6fBbuAxpZ0lXLyTT6yY14=")
 kh.loginResult()
 
 kj = LINETCR.LINE()
-kj.login(token="EnH3AxhOo8e5WdhxdKC8.PHu9Jj2QfTEzOzCw7q5q/a.cEy5GB36QS55U5d5+wh0eppCV/tLO7Zs9eGqSWNpDqg=")
+kj.login(token="EnYZG6RQxnzmsneXeGK8.PHu9Jj2QfTEzOzCw7q5q/a.oQir1PeyQyQ+tbvFvmUzxhop1LA/n+9egM6sRmb4wh8=")
 kj.loginResult()
 
 kl = LINETCR.LINE()
-kl.login(token="Ene1dz7qAaxlxc0rQqC9.SToq+Adh7am3maMPFEVM/q.lU2ob4iadzVwjAABGMzjm63wnO0BNxcO3XgQK3T3DBo=")
+kl.login(token="EnZa36TazRHaL4gp7Ey9.SToq+Adh7am3maMPFEVM/q.PXyfBFhDNLQbL/JP8oOwMB4wCVEqh2gJu159mXATmWI=")
 kl.loginResult()
 
 km = LINETCR.LINE()
-km.login(token="En5L413yy6O1To83Fad6.AEksypRHUUmnTL3iWKWpfG.sDXhygbZpiWO5rfGirMvOMTlO59drfNrUEqtXGo/gG4=")
+km.login(token="EnO48AQaaLXSxdUSSkQ6.AEksypRHUUmnTL3iWKWpfG.eUUo3mLyr8Bwh+llmbWdhCITeDpfJd9o/0/RQurg1v4=")
 km.loginResult()
 
 kn = LINETCR.LINE()
@@ -59,27 +58,27 @@ kn.login(token="EnI7ndn1IyE6Mor0Gz38.1vrheGCJ1zMYVolwEXtRca.OoKEbzMRtX1jym7eloKB
 kn.loginResult()
 
 ko = LINETCR.LINE()
-ko.login(token="En3Rqhbm2Dqz0izafh95.tPDsUdJZXvKPQOUc44Txrq.Rkeib1QVR9osoca860oVbESTecbWzL28PCfrLbpDRWQ=")
+ko.login(token="Enen6OIGdUMNAYvERwJ5.tPDsUdJZXvKPQOUc44Txrq.1SJkB27BtOk1ZVTmSFCQqKtE59sQc8+iP+WWZpsayGY=")
 ko.loginResult()
 
 kp = LINETCR.LINE()
-kp.login(token="EnGMJ2EHVHvKIENhlrP4.h3P92CCPLrvuZl+/sjgTHa.izoSQefLOCY0OL9NX3I3voYHfPBgrII7DTULMOeCzxE=")
+kp.login(token="EnDfKQkcMqUNDSkNp1H4.h3P92CCPLrvuZl+/sjgTHa.T1wKx0/COlJI55cM1bSvqyGnrrYcUAhIjOMbglkgvBU=")
 kp.loginResult()
 
 kq = LINETCR.LINE()
-kq.login(token="EnGVWmRqeldl8HPLIjIf.c/m8IinMdlKmygHk0drlJW.yhLL6mpDqbVepYsIMZZQLwc2zONBHWGK/F6Xg8m1FoI=")
+kq.login(token="Enlh20xiL8E0Qrh5ywyf.c/m8IinMdlKmygHk0drlJW.ViQVI7igaFpSizRfZWtjYnIcB6YI5pItsYm/7ODRC6I=")
 kq.loginResult()
 
 kr = LINETCR.LINE()
-kr.login(token="Enqn9WGGcA8IrYPY9xa8.ZljcgNhbjqeW/41Qp39iga.Q/pz5y1AF87Nq1kYRWnGpVOEnsfrU5UziI6pXXUFiLk=")
+kr.login(token="EnNR37Tz4OQkYgTNn1F8.ZljcgNhbjqeW/41Qp39iga.K111mBj65j26ttzEzG+n5vPF7yN7qisxiMXQx39Zlpg=")
 kr.loginResult()
 
 ks = LINETCR.LINE()
-ks.login(token="EnzwnOsFKK3S7JD6eTd8.AFMsOTwU/bnGPo2Fn+vVAa.ofemYH8OIRwSaiNWCFYLouiUgyC3b8503Yv4iF/M2bk=")
+ks.login(token="En2dZD2xAHfaWTQNtys8.AFMsOTwU/bnGPo2Fn+vVAa.0bIipzf+wbChCvJM8rWnBgCoDrp0wMFEHJF9gWaMLrI=")
 ks.loginResult()
 
 kt = LINETCR.LINE()
-kt.login(token="En0YPJEMIy2QzZTfmZtf.5c3SW9UdZcMFeDtPu+MRNW.U2tjlcIsg6sjMFzwDs7QsQqBrINKFppG1Ifl+fVwFNc=")
+kt.login(token="EnsQDTilJW7J1f34tlPf.5c3SW9UdZcMFeDtPu+MRNW.EaYO4/iOiijzpi0eAe9WAK6j94yusNvDTDkW6+K10pU=")
 kt.loginResult()
 
 cl
@@ -124,25 +123,25 @@ http://line.me/ti/p/~1ove..neverdie
 ❂͜͡☆➣ Comment set:
 ❂͜͡☆➣ Cbroadcast text
 ❂͜͡☆➣ Gbroadcast text
-❂͜͡☆➣ Reject  ❇️ ลบรัน
-❂͜͡☆➣ Reject1 ❇️ ลบรันบอท1
-❂͜͡☆➣ Reject2 ❇️ ลบรันบอท2
-❂͜͡☆➣ Reject3 ❇️ ลบรันบอท3
-❂͜͡☆➣ Reject4 ❇️ ลบรันบอท4
-❂͜͡☆➣ Reject5 ❇️ ลบรันบอท5
-❂͜͡☆➣ Reject6 ❇️ ลบรันบอท6
-❂͜͡☆➣ Reject7 ❇️ ลบรันบอท7
-❂͜͡☆➣ Reject8 ❇️ ลบรันบอท8
-❂͜͡☆➣ Reject9 ❇️ ลบรันบอท9
-❂͜͡☆➣ Reject10 ❇️ ลบรันบอท10
-❂͜͡☆➣ Reject11 ❇️ ลบรันบอท11
-❂͜͡☆➣ Reject12 ❇️ ลบรันบอท12
-❂͜͡☆➣ Reject13 ❇️ ลบรันบอท13
-❂͜͡☆➣ Reject14 ❇️ ลบรันบอท14
-❂͜͡☆➣ Reject15 ❇️ ลบรันบอท15
-❂͜͡☆➣ Reject16 ❇️ ลบรันบอท16
-❂͜͡☆➣ Reject17 ❇️ ลบรันบอท17
-❂͜͡☆➣ Reject18 ❇️ ลบรันบอท18
+❂͜͡☆➣ Reject  () ลบรัน
+❂͜͡☆➣ Reject1 () ลบรันบอท1
+❂͜͡☆➣ Reject2 () ลบรันบอท2
+❂͜͡☆➣ Reject3 () ลบรันบอท3
+❂͜͡☆➣ Reject4 () ลบรันบอท4
+❂͜͡☆➣ Reject5 () ลบรันบอท5
+❂͜͡☆➣ Reject6 () ลบรันบอท6
+❂͜͡☆➣ Reject7 () ลบรันบอท7
+❂͜͡☆➣ Reject8 () ลบรันบอท8
+❂͜͡☆➣ Reject9 () ลบรันบอท9
+❂͜͡☆➣ Reject10 () ลบรันบอท10
+❂͜͡☆➣ Reject11 () ลบรันบอท11
+❂͜͡☆➣ Reject12 () ลบรันบอท12
+❂͜͡☆➣ Reject13 () ลบรันบอท13
+❂͜͡☆➣ Reject14 () ลบรันบอท14
+❂͜͡☆➣ Reject15 () ลบรันบอท15
+❂͜͡☆➣ Reject16 () ลบรันบอท16
+❂͜͡☆➣ Reject17 () ลบรันบอท17
+❂͜͡☆➣ Reject18 () ลบรันบอท18
 ❂͜͡☆➣ ลบแชท  ☜☞  ล้างแชท
 ❂͜͡☆➣ ลบแชทบอท ☜☞ ล้างแชทบอท
 [C̶̲̅ᴏ̶̲̅ᴍ̶̲̅ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅ᴅ̶̲̅ ̶̲̅ɪ̶̲̅ɴ̶̲̅ ̶̲̅G̶̲̅ʀ̶̲̅ᴏ̶̲̅ᴜ̶̲̅ᴘ̶̲̅] 
