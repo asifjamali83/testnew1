@@ -1,66 +1,59 @@
 # -*- coding: utf-8 -*-
-
 import LINETCR
 from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
-import time, random, sys, ast, re, os, io, json, subprocess, threading, string, codecs, requests, ctypes, urllib, urllib2, urllib3, wikipedia, tempfile
-from bs4 import BeautifulSoup
+import time, random, sys, ast, re, os, json, subprocess, threading, string, codecs, requests, ctypes, urllib, urllib2, urllib3, tempfile
 from urllib import urlopen
-from io import StringIO
 from threading import Thread
-from gtts import gTTS
-from googletrans import Translator
+
 cl = LINETCR.LINE()
-cl.login(token="EoB8ZHHukR5B6XYgAuma.apGNZMzba418M2CeQxD9/G.gcWcqLOM8kQNULkpMxRQGfnG2MClR+WVbVyMEeLo3TI=")
+cl.login(token="EoHgjzyz5WI48XdiquM5.0KR2p9yTfmo+J3gD/aW3rq.HkMXyTK4Op+rqe33EBquYkRGImQrnZVvPfiKl+3TKQ8=")
 cl.loginResult()
 
 ki1 = LINETCR.LINE()
-ki1.login(token="EoRrJ7tye8FQarygx2h7.VlpYu+Q6jGzsicHOptxRPW.acUdejhDzXHwLZQftewce6f1PLt3gRrV0kbM9kqGOOc=")
+ki1.login(token="EoTeWFArczZluSiMbprc.HoR1JnsB+4qeb6VJ+e21Na.OYO6OQOngCQ4HHgPfr89kI1RQRk0NzWtRxUIH9GjiMA=")
 ki1.loginResult()
 
 ki2 = LINETCR.LINE()
-ki2.login(token="Eoanj57G8zVmnx1Lbcq0.+ZViS46tqNx/xW3+/xvqWa.7OEC6oc00qyDxg4oyNPkxUPR6cp4NQtisWXcXsisb04=")
+ki2.login(token="EobErhJU9s8AFSEH2v91.0yBG21qsxOytdiizPZNOOq.jFKXCZ3/3cGlzdjAgvk6wRTtDR/y/I3TCSGwMDkUrFU=")
 ki2.loginResult()
 
 ki3 = LINETCR.LINE()
-ki3.login(token="EoTaHjbFSm5Q4uSw9nD8.TDGC/4U6kG8mrZHlHb4Xsa.5GnU4dc+9495v9xtFbXwBQbj8Mkh1Tf9eo/QyyHDPQA=")
+ki3.login(token="EoISRJmpFIlt4vAepema.TvetDTQOiFfoCjE8lx6qQG.Nh+A4SHPj08YnBhtOEggufiOcXE2KwNA63Pg/fYfwjk=")
 ki3.loginResult()
 
 ki4 = LINETCR.LINE()
-ki4.login(token="Eov6BKJXHfTv7j3CRHU5.aOeodX8FNJewWK5vf5P9fq.LnPl7aQDvd/bjbou+L2w1lvh/ioHsSUQYDfd/swfrZA=")
+ki4.login(token="EoeXjtmxTWBTh1vPa193.k4Za5/UEgS3xASuSVtbn4W.wmw0lEhkelsAUu582EAbJyng2jYrnmJD2djCa9iEa3k=")
 ki4.loginResult()
 
 ki5 = LINETCR.LINE()
-ki5.login(token="EoD4mpmx79uzg09jbML1.efbujRuyG0q0ahbGcSYguq.DxbEGtvtTXAKEePt4fLUXH8jRjh7VG+5CUM0fAPAWAw=")
+ki5.login(token="Eol4uhPLmephFDtq2ska.s/dq/M0GLZkiMLYg3XHlcG.gt7oN/BbqWEKdYO0Hgg9XVMmsnVqZx9TVhyg1AgHEKU=")
 ki5.loginResult()
 
 ki6 = LINETCR.LINE()
-ki6.login(token="EoxwAg1N3lSmzFfZ0RX3.7f74kMOPgNIBSGT6+sawqW.zNL95ZZiregvvKd9pBWeCNQEvFK8pQVNb3TtBibAGEQ=")
+ki6.login(token="Eos1fJesozHwLIpMjep8.fKk7jKzQ5mzh1YnPidc0ga.znD9fbBd65YV1O824ztfXzEJLBEz1WxS0or5hmOvSYg=")
 ki6.loginResult()
 
 ki7 = LINETCR.LINE()
-ki7.login(token="Eokv7n7uoq4tsmQWREkf.PqUHiCpv2pBtz8Q0TEIqxW.AgPVyVnLoG7UHyzHyQX/ICM4cQapp9zRSY2uGr95du8=")
+ki7.login(token="EoQn29gmazTjPGFDY0b2.GEJaLf18HIrlmEJ3dKxw4G.218UbCeF+/cWWPjd5rrUNcEaLg4vcxJL/g7BKu0OIi8=")
 ki7.loginResult()
 
 ki8 = LINETCR.LINE()
-ki8.login(token="EoxWhUuk78IXHPBgYgbe.nMGqEcQDlP6dAl/gilNatG.90ay26S0VfNPti2ZmKGDVlu6FJ3ivCsIUSVDa6kmBEA=")
+ki8.login(token="EoP79w32MHjVLpnjFAUb.R+TwP1t4enhkFeLLHqn0sW.H8rNiCk3KJ4P3CsNexMA0g6fBbuAxpZ0lXLyTT6yY14=")
 ki8.loginResult()
 
 ki9 = LINETCR.LINE()
-ki9.login(token="EoluRsFVIBC6WfNecGja.XeTFQ55WYwSmXh4n0wOhcG.Zl36VJU8INIcSFmmXsMSXyUZW+gbjmQTgE6LxBQpCa4=")
+ki9.login(token="EoYZG6RQxnzmsneXeGK8.PHu9Jj2QfTEzOzCw7q5q/a.oQir1PeyQyQ+tbvFvmUzxhop1LA/n+9egM6sRmb4wh8=")
 ki9.loginResult()
 
 ki10 = LINETCR.LINE()
-ki10.login(token="EoQW0fWuribDJDJRBTCa.XIBZSHhwVEi2szZJfJwo/G.0Vu2NC0IMsGRgSttKg/vSJz9ngGwx/lGkaqdUqt1GgM=")
+ki10.login(token="EoZa36TazRHaL4gp7Ey9.SToq+Adh7am3maMPFEVM/q.PXyfBFhDNLQbL/JP8oOwMB4wCVEqh2gJu159mXATmWI=")
 ki10.loginResult()
 
 print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
-helpMessage ="""     ─┅═✥हईທຮຮๅજईह✥═┅─
-
-─┅═✥s̵ᴇʟғʙᴏᴛ ᴛʜᴀɪʟᴀɴᴅ✥═┅─
-                     
+helpMessage ="""           ✯✯❇Thailand❇✯✯\n      ✯❇͜͡C͜͡r͜͡e͜͡a͜͡t͜͡o͜͡r ͜͡$͜͡ë͜͡I͜͡F͜͡-͜͡฿͜͡o͜͡Ŧ❇✯\n\
 ❂͜͡☆➣ 『Me』
 ❂͜͡☆➣ 『Id』
 ❂͜͡☆➣ 『Wc』
@@ -85,14 +78,10 @@ helpMessage ="""     ─┅═✥हईທຮຮๅજईह✥═┅─
 ❂͜͡☆➣ 『Cbroadcast text』
 ❂͜͡☆➣ 『Gbroadcast text』
 ❂͜͡☆➣ 『Reject』
- 
-──┅═✥===========✥═┅──
 
-                 SELFBOT
-
-          PHET HACK BOT
-            
-──┅═✥===========✥═┅──
+──────┅═ই۝ई═┅──────
+•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•
+──────┅═ই۝ई═┅──────
 
 ❂͜͡☆➣ 『Creator 』
 ❂͜͡☆➣ 『Gn: text 』
@@ -138,9 +127,10 @@ helpMessage ="""     ─┅═✥हईທຮຮๅજईह✥═┅─
 ❂͜͡☆➣ 『Cleanse』
 ❂͜͡☆➣ 『Bot Speed』
 ❂͜͡☆➣ 『P1-P36 link on/off』
- 
-  
-──┅═✥===========✥═┅──
+
+──────┅═ই۝ई═┅──────
+•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•
+──────┅═ই۝ई═┅──────
 
 ❂͜͡☆➣ 『Key』
 ❂͜͡☆➣ 『Qr on/off』
@@ -148,12 +138,7 @@ helpMessage ="""     ─┅═✥हईທຮຮๅજईह✥═┅─
 ❂͜͡☆➣ 『Protect On/off』
 ❂͜͡☆➣ 『Namelock On/off』
 
-    
-        ─┅═✥ᵀᴴᴬᴵᴸᴬᴺᴰ✥═┅─
-
-      [By. เพชร ทีมทดลองบอท]
-
-──┅═✥============✥═┅──"""
+──────┅═ই۝ई═┅──────"""
 helpMessage2 ="""
 ╔═════════════════
 ║       ✟ New function ✟
@@ -310,13 +295,13 @@ autoinvite = []
 autoleaveroom = []
 targets = []
 mid = cl.getProfile().mid
-Bots = ["u00f827ce6641038d7c9b6704a9777dfa",mid,Amid1,Amid2,Amid3,Amid4,Amid5,Amid6,Amid7,Amid8,Amid9,Amid10]
-self = ["u00f827ce6641038d7c9b6704a9777dfa",mid,Amid1,Amid2,Amid3,Amid4,Amid5,Amid6,Amid7,Amid8,Amid9,Amid10]
-admin = "u00f827ce6641038d7c9b6704a9777dfa"
-admsa = "u00f827ce6641038d7c9b6704a9777dfa"
-owner = "u00f827ce6641038d7c9b6704a9777dfa"
-adminMID = "u00f827ce6641038d7c9b6704a9777dfa"
-Creator="u00f827ce6641038d7c9b6704a9777dfa"
+Bots = ["ud24af63fd62d14c3bf8f719df80c3745",mid,Amid1,Amid2,Amid3,Amid4,Amid5,Amid6,Amid7,Amid8,Amid9,Amid10]
+self = ["ud24af63fd62d14c3bf8f719df80c3745",mid,Amid1,Amid2,Amid3,Amid4,Amid5,Amid6,Amid7,Amid8,Amid9,Amid10]
+admin = "ud24af63fd62d14c3bf8f719df80c3745"
+admsa = "ud24af63fd62d14c3bf8f719df80c3745"
+owner = "ud24af63fd62d14c3bf8f719df80c3745"
+adminMID = "ud24af63fd62d14c3bf8f719df80c3745"
+Creator = "ud24af63fd62d14c3bf8f719df80c3745"
 wait = {
     "alwayRead":False,
     "detectMention":True,    
@@ -331,9 +316,9 @@ wait = {
     'leaveRoom':True,
     'timeline':True,
     'autoAdd':False,
-    'message':"Thanks for add Me MY NAME IS PHET",
+    'message':"Thanks for add Me MY NAME IS MAN",
     "lang":"JP",
-    "comment":"AutoLike by Phet",
+    "comment":"AutoLike by Thailand creator",
     "commentOn":False,
     "acommentOn":False,
     "bcommentOn":False,
@@ -344,7 +329,7 @@ wait = {
     "wblack":False,
     "dblack":False,
     "clock":False,
-    "cName":"༺ ㏒ Ᵽɧëȶ ㏒ ༻",
+    "cName":"",
     "likeOn":False,
     "pname":False,
     "blacklist":{},
@@ -717,7 +702,7 @@ def bot(op):
                                             ki4.updateGroup(G)
                                         except:
                                             pass
-                    if op.param2 in ken:
+                if op.param2 in ken:
                         pass
                     else:
                         try:
@@ -862,8 +847,6 @@ def bot(op):
                         G.preventJoinByTicket = True
                         ki10.updateGroup(X)
                         Ti = ki10.reissueGroupTicket(op.param1)
-
-
 
                 if op.param3 in Amid1:
                     if op.param2 in Amid2:
@@ -1260,7 +1243,6 @@ def bot(op):
                         pass
                     else:
                         wait["blacklist"][op.param2] = True
-
 
                 if Amid2 in op.param3:
                     if op.param2 in Bots:
@@ -1736,7 +1718,6 @@ def bot(op):
                   cl.acceptGroupInvitation(op.param1)
               else:
                   cl.rejectGroupInvitation(op.param1)
-
 
         if op.type == 22:
             if wait["leaveRoom"] == True:
