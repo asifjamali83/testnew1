@@ -3187,10 +3187,9 @@ http://line.me/ti/p/~1ove..neverdie
                         cl.sendText(msg.to,"Already。")
 
 #========================================
-#========================================
-            elif msg.text in ["Set"]:
+            elif msg.text in ["Setting"]:
                 print "Setting pick up..."
-                md = "        ✯✯❇Thailand❇✯✯\n   ✯❇͜͡C͜͡r͜͡e͜͡a͜͡t͜͡o͜͡r ͜͡$͜͡ë͜͡I͜͡F͜͡-͜͡฿͜͡o͜͡Ŧ❇✯\n\n"
+                md = "      ✯✯❇Thailand❇✯✯\n  ✯❇͜͡C͜͡r͜͡e͜͡a͜͡t͜͡o͜͡r ͜͡$͜͡ë͜͡I͜͡F͜͡-͜͡฿͜͡o͜͡Ŧ❇✯\n\n"
                 if wait["likeOn"] == True: md+="􀬁􀆐􏿿 Auto like : on 􀜁􀄯􏿿\n"
                 else:md+="􀬁􀆐􏿿 Auto like : off 􀜁􀄰􏿿\n"
                 if wait["alwayRead"] == True: md+="􀬁􀆐􏿿 Read : on 􀜁􀄯􏿿\n"
@@ -3240,7 +3239,58 @@ http://line.me/ti/p/~1ove..neverdie
                 msg.contentMetadata = {'mid': admsa}
                 cl.sendMessage(msg)
 #========================================
-
+            elif msg.text in ["Set","ตั้งค่า"]:
+                print "Setting pick up..."
+                md = "       ✯✯❇Thailand❇✯✯\n  ✯❇͜͡C͜͡r͜͡e͜͡a͜͡t͜͡o͜͡r ͜͡$͜͡ë͜͡I͜͡F͜͡-͜͡฿͜͡o͜͡Ŧ❇✯\n\n"
+                if wait["likeOn"] == True: md+="✔ Auto like : on \n"
+                else:md+="❎ Auto like : off \n"
+                if wait["alwayRead"] == True: md+="✔ Read : on \n"
+                else:md+="❎ Read : off \n"
+                if wait["detectMention"] == True: md+="✔ Autorespon : on \n"
+                else:md+="❎ Autorespon : off \n"
+                if wait["kickMention"] == True: md+="✔ Autokick: on \n"
+                else:md+="❎ Autokick : off \n"
+                if wait["Notifed"] == True: md+="✔ Notifed : on \n"
+                else:md+="❎ Notifed : off \n"
+                if wait["Notifedbot"] == True: md+="✔ Notifedbot : on \n"
+                else:md+="❎ Notifedbot : off \n"
+                if wait["acommentOn"] == True: md+="✔ Hhx1 : on \n"
+                else:md+="❎ Hhx1 : off \n"
+                if wait["bcommentOn"] == True: md+="✔ Hhx2 : on \n"
+                else:md+="❎ Hhx2 : off \n"
+                if wait["ccommentOn"] == True: md+="✔ Hhx3 : on \n"
+                else:md+="❎ Hhx3 : off \n"
+                if wait["Protectcancl"] == True: md+="✔ Cancel : on \n"
+                else:md+="❎ Cancel : off \n"
+                if wait["winvite"] == True: md+="✔ Invite : on \n"
+                else:md+="❎ Invite : off \n"
+                if wait["pname"] == True: md+="✔ Namelock : on \n"
+                else:md+="❎ Namelock : off \n"
+                if wait["contact"] == True: md+="✔ Contact : on \n"
+                else:md+="❎ Contact : off \n"
+                if wait["autoJoin"] == True: md+="✔ Auto join : on \n"
+                else:md+="❎ Auto join : off \n"
+                if wait["autoCancel"]["on"] == True:md+="❇️ Group cancel :" + str(wait["autoCancel"]["members"]) + " ⭕\n"
+                else:md+="❇️ Group cancel : off \n"
+                if wait["leaveRoom"] == True: md+="✔ Auto leave : on \n"
+                else:md+="❎ Auto leave : off \n"
+                if wait["timeline"] == True: md+="✔ Share : on \n"
+                else:md+="❎ Share : off \n"
+                if wait["clock"] == True: md+="✔ Clock Name : on \n"
+                else:md+="❎ Clock Name : off \n"
+                if wait["autoAdd"] == True: md+="✔ Auto add : on \n"
+                else:md+="❎ Auto add : off \n"
+                if wait["commentOn"] == True: md+="✔ Comment : on \n"
+                else:md+="❎ Comment : off \n"
+                if wait["Backup"] == True: md+="✔ Backup : on \n"
+                else:md+="❎ Backup : off \n"
+                if wait["qr"] == True: md+="✔ Protect QR : on \n"
+                else:md+="❎ Protect QR : off \n"
+                cl.sendText(msg.to,md)
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': admsa}
+                cl.sendMessage(msg)
+#========================================
 #------------------------------------------------
             elif msg.text in ["Gcreator:inv","เชิญเเอทมิน"]:
 	        if msg.from_ in admin:
