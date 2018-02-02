@@ -702,7 +702,7 @@ def bot(op):
                                             ki4.updateGroup(G)
                                         except:
                                             pass
-                if op.param2 in ken:
+                    if op.param2 in ken:
                         pass
                     else:
                         try:
@@ -2145,8 +2145,6 @@ def bot(op):
                 except:
                     cl.sendText(msg.to,"Could not find it")
 
-
-
             elif msg.text in ["55"]:
                 msg.contentType = 7
                 msg.text = None
@@ -2170,7 +2168,6 @@ def bot(op):
                 txt = msg.text.replace("youname ", "")
                 cl.kedapkedip(msg.to,txt)
                 print "[Command] Kedapkedip"
-
 
             elif "Bl " in msg.text:
                 if msg.from_ in admin:
@@ -2527,9 +2524,8 @@ def bot(op):
                     except:
                         pass
 
-            elif "#v10" in msg.text:
-                cl.sendText(msg.to,"""[SELFBOT PHET HACK BOT]\n\n
-Phet Tema Hack Bot
+            elif "V10" in msg.text:
+                cl.sendText(msg.to,"""[รับติดตั้งBOTsirichanV10]\n\n
 คำสั่งบอท siri
 คำนี้เป็นการล็อกห้องสั่งแล้วทุกคนจะทำอะไรไม่ได้นอกจากเจ้าของห้องทำได้คนเดียวเช่น•เปิดลิงค์•เชิญเพื่อน•เปลี่ยนรูปกลุ่ม•เปลี่ยนชื่อกลุ่มไรแบบนี้• บอทจะไม่เตะเเอทมินทุกกรณี
 มีตั้งเเต่ชุดบอท 12-37 บอท
@@ -3194,7 +3190,7 @@ http://line.me/ti/p/~1ove..neverdie
 #========================================
             elif msg.text in ["Set"]:
                 print "Setting pick up..."
-                md = "          ✯✯❇Thailand❇✯✯\n     ✯❇͜͡C͜͡r͜͡e͜͡a͜͡t͜͡o͜͡r ͜͡$͜͡ë͜͡I͜͡F͜͡-͜͡฿͜͡o͜͡Ŧ❇✯\n\n"
+                md = "        ✯✯❇Thailand❇✯✯\n   ✯❇͜͡C͜͡r͜͡e͜͡a͜͡t͜͡o͜͡r ͜͡$͜͡ë͜͡I͜͡F͜͡-͜͡฿͜͡o͜͡Ŧ❇✯\n\n"
                 if wait["likeOn"] == True: md+="􀬁􀆐􏿿 Auto like : on 􀜁􀄯􏿿\n"
                 else:md+="􀬁􀆐􏿿 Auto like : off 􀜁􀄰􏿿\n"
                 if wait["alwayRead"] == True: md+="􀬁􀆐􏿿 Read : on 􀜁􀄯􏿿\n"
@@ -3248,7 +3244,7 @@ http://line.me/ti/p/~1ove..neverdie
 #------------------------------------------------
             elif msg.text in ["Gcreator:inv","เชิญเเอทมิน"]:
 	        if msg.from_ in admin:
-                  ginfo = cl.getGroup(msg.to)
+                    ginfo = cl.getGroup(msg.to)
                     gCreator = ginfo.creator.mid
                     try:
                        cl.findAndAddContactsByMid(gCreator)
