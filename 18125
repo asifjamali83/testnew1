@@ -3628,6 +3628,11 @@ http://line.me/ti/p/~1ove..neverdie
                 else:
                     cl.sendText(msg.to,"Please turn on the name clock")
 
+            elif ("Hack: " in msg.text):
+                   key = eval(msg.contentMetadata["MENTION"])
+                   key1 = key["MENTIONEES"][0]["M"]
+                   mi = cl.getContact(key1)
+                   cl.sendText(msg.to,"Mid:" + key1)
 #========================================
             elif "Hack3 @" in msg.text:            
                 print "[Command]dp executing"
@@ -3695,9 +3700,76 @@ http://line.me/ti/p/~1ove..neverdie
                                 break
                 else:
                     cl.sendText(msg.to,"Tidak bisa dilakukan di luar grup")
+#========================================
+            elif "Hack cover @" in msg.text:            
+                print "[Command]dp executing"
+                _name = msg.text.replace("Hack cover @","")
+                _nametarget = _name.rstrip('  ')
+                gs = cl.getGroup(msg.to)
+                targets = []
+                for g in gs.members:
+                    if _nametarget == g.displayName:
+                        targets.append(g.mid)
+                if targets == []:
+                    cl.sendText(msg.to,"Contact not found")
+                else:
+                    for target in targets:
+                        try:
+                            contact = cl.getContact(target)
+                            cu = cl.channel.getCover(target)
+                            path = str(cu)
+                            cl.sendImageWithURL(msg.to, path)
+                        except:
+                            pass
+                print "[Command]dp executed"
+            elif "Hack-mid:" in msg.text:
+                umid = msg.text.replace("Hack-mid:","")
+                contact = cl.getContact(umid)
+                try:
+                    image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
+                except:
+                    image = "https://www.1and1.co.uk/digitalguide/fileadmin/DigitalGuide/Teaser/not-found-t.jpg"
+                try:
+                    cl.sendImageWithURL(msg.to,image)
+                except Exception as error:
+                    cl.sendText(msg.to,(error))
+                    pass
+            elif "Hack pic " in msg.text:
+                if msg.toType == 2:
+                    msg.contentType = 0
+                    steal0 = msg.text.replace("Hack pic ","")
+                    steal1 = steal0.lstrip()
+                    steal2 = steal1.replace("@","")
+                    steal3 = steal2.rstrip()
+                    _name = steal3
+                    group = cl.getGroup(msg.to)
+                    targets = []
+                    for g in group.members:
+                        if _name == g.displayName:
+                            targets.append(g.mid)
+                    if targets == []:
+                        cl.sendText(msg.to,"Gak da orange")
+                    else:
+                        for target in targets:
+                            try:
+                                contact = cl.getContact(target)
+                                try:
+                                    image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
+                                except:
+                                    image = "https://www.1and1.co.uk/digitalguide/fileadmin/DigitalGuide/Teaser/not-found-t.jpg"
+                                try:
+                                    cl.sendImageWithURL(msg.to,image)
+                                except Exception as error:
+                                    cl.sendText(msg.to,(error))
+                                    pass
+                            except:
+                                cl.sendText(msg.to,"Error!")
+                                break
+                else:
+                    cl.sendText(msg.to,"Tidak bisa dilakukan di luar grup")
 
-#===============================================
-            elif msg.text in ["Sp","sp","Speed"]:
+#=============================================== 
+            elif msg.text in ["!Sp","!sp","!speed"]:
                 cl.sendText(msg.to, "Progress.......")
                 start = time.time()
                 time.sleep(0.06)
@@ -3705,7 +3777,7 @@ http://line.me/ti/p/~1ove..neverdie
                 cl.sendText(msg.to, "%sseconds" % (elapsed_time))    
                 print "[Command]Speed palsu executed"
             elif msg.text in ["Bot Speed"]:
-                ki1.sendText(msg.to, "Progress.......")
+                ki1.sendText(msg.to, "Progress...")
                 start = time.time()
                 time.sleep(0.06)
                 elapsed_time = time.time() - start
@@ -3753,7 +3825,7 @@ http://line.me/ti/p/~1ove..neverdie
                     cl.sendText(msg.to, str (e))
 
 
-            elif msg.text in ["Mebb"]:
+            elif msg.text in ["Mybb"]:
                 try:
                     cl.updateDisplayPicture(mybackup.pictureStatus)
                     cl.updateProfile(mybackup)
@@ -3762,7 +3834,7 @@ http://line.me/ti/p/~1ove..neverdie
                     cl.sendText(msg.to, str (e))
 
 #=================================================
-            elif msg.text == "#mid on":
+            elif msg.text == "Mid on":
                     cl.sendText(msg.to, "Done..")
                     try:
                         del wait2['readPoint'][msg.to]
@@ -3775,7 +3847,7 @@ http://line.me/ti/p/~1ove..neverdie
                     wait2['setTime'][msg.to] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
                     wait2['ROM'][msg.to] = {}
                     print wait2
-            elif msg.text == "#mid off":
+            elif msg.text == "Mid off":
                     if msg.to in wait2['readPoint']:
                         if wait2["ROM"][msg.to].items() == []:
                             chiya = ""
@@ -3931,7 +4003,7 @@ http://line.me/ti/p/~1ove..neverdie
                         cl.sendText(msg.to,"Link off")
 
 #========================================
-            elif "{}" in msg.text:
+            elif "+++" in msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': msg.to+"',"}
                 cl.sendMessage(msg)
@@ -4280,7 +4352,7 @@ http://line.me/ti/p/~1ove..neverdie
                        except:
                            ki5.sendText(msg.to,"Error")
 
-            elif "Phet@@" in msg.text:
+            elif "Man@tag" in msg.text:
                 group = cl.getGroup(msg.to)
                 k = len(group.members)//100
                 for j in xrange(k+1):
@@ -4384,9 +4456,9 @@ http://line.me/ti/p/~1ove..neverdie
                                 cl.sendText(msg.to,"Sudah di keluarkan dari daftar bejat Boss")
                             except:
                                 cl.sendText(msg.to,"There was no blacklist user")
-            elif msg.text in ["Clear ban","ล้างดำ"]:
+            elif msg.text in ["Clear ban","ล้างดำ","Cb"]:
 				wait["blacklist"] = {}
-				cl.sendText(msg.to,"clear")
+				cl.sendText(msg.to,"Clear Blacklist")
 				
             elif msg.text in ["Ban"]:
                 wait["wblacklist"] = True
@@ -4405,14 +4477,14 @@ http://line.me/ti/p/~1ove..neverdie
                     for mi_d in wait["blacklist"]:
                         mc += "[✗] " + cl.getContact(mi_d).displayName + " \n"
                     cl.sendText(msg.to, mc + "")
-            elif msg.text in ["Me ban","Cekban","Mcheck mid"]:
+            elif msg.text in ["Me ban","Cekban","Mid ban"]:
                 if msg.toType == 2:
                     group = cl.getGroup(msg.to)
                     gMembMids = [contact.mid for contact in group.members]
                     matched_list = []
                     for tag in wait["blacklist"]:
                         matched_list+=filter(lambda str: str == tag, gMembMids)
-                    cocoa = "[⎈]Mid Blacklist [⎈]"
+                    cocoa = "[⎈] Mid Blacklist [⎈]"
                     for mm in matched_list:
                         cocoa += "\n" + mm + "\n"
                     cl.sendText(msg.to,cocoa + "")
@@ -4620,7 +4692,7 @@ http://line.me/ti/p/~1ove..neverdie
                 cl.sendText(msg.to,"-- List Groups --\n\n"+ h +"\nTotal groups =" +" ["+str(len(gid))+"]")
             
 
-            elif "phet tag all" == msg.text.lower():
+            elif "man tagall" == msg.text.lower():
                  group = cl.getGroup(msg.to)
                  nama = [contact.mid for contact in group.members]
                  nm1, nm2, nm3, nm4, nm5, jml = [], [], [], [], [], len(nama)
@@ -4652,7 +4724,7 @@ http://line.me/ti/p/~1ove..neverdie
                  if jml > 500:
                      print "Terlalu Banyak Men 500+"
                  cnt = Message()
-                 cnt.text = "PHET TAG DONE :\n" + str(jml) +  " Members"
+                 cnt.text = "SELFBOTMAN TAG ALL :\n" + str(jml) +  " Members"
                  cnt.to = msg.to
                  cl.sendMessage(cnt)
 
@@ -5008,8 +5080,8 @@ http://line.me/ti/p/~1ove..neverdie
                     cl.sendImageWithUrl(msg.to,path)
                 except:
                     pass
-            elif "#picall" in msg.text:
-                       nk0 = msg.text.replace("#picall","")
+            elif "Pic all" in msg.text:
+                       nk0 = msg.text.replace("Pic all","")
                        nk1 = nk0.lstrip()
                        nk2 = nk1.replace("","")
                        nk3 = nk2.rstrip()
@@ -5031,8 +5103,8 @@ http://line.me/ti/p/~1ove..neverdie
                                 except Exception as e:
                                     raise e
 
-            elif "#pictall" in msg.text:
-                       nk0 = msg.text.replace("#pictall","")
+            elif "Pictall" in msg.text:
+                       nk0 = msg.text.replace("Pictall","")
                        nk1 = nk0.lstrip()
                        nk2 = nk1.replace("","")
                        nk3 = nk2.rstrip()
@@ -5055,8 +5127,8 @@ http://line.me/ti/p/~1ove..neverdie
                                     cl.sendImageWithUrl(msg.to, path)
                                 except Exception as e:
                                     raise e
-            elif "#phethackall" in msg.text:
-                       nk0 = msg.text.replace("#phethackall","")
+            elif "Hackall" in msg.text:
+                       nk0 = msg.text.replace("Hackall","")
                        nk1 = nk0.lstrip()
                        nk2 = nk1.replace("","")
                        nk3 = nk2.rstrip()
@@ -5165,7 +5237,7 @@ http://line.me/ti/p/~1ove..neverdie
                         except Exception as e:
                             raise e
                 print "[Command]cover executed"
-            elif "เจ้งเตือน" in msg.text:
+            elif "แจ้งเตือน" in msg.text:
                 group = cl.getGroup(msg.to)
                 path = "http://dl.profile.line-cdn.net/" + group.pictureStatus
                 cl.sendImageWithUrl(msg.to,path)
@@ -5785,11 +5857,21 @@ http://line.me/ti/p/~1ove..neverdie
                 except:
                     cl.sendText(msg.to,"[name]\n" + contact.displayName + "\n[mid]\n" + contact.mid + "\n[statusmessage]\n" + contact.statusMessage + "\n[homePicture]\n" + str(cu))
 #=============================================
-            elif msg.text in ["!Sp"]:
+            elif "Hack tus" in msg.text:
+                key = eval(msg.contentMetadata["MENTION"])
+                key1 = key["MENTIONEES"][0]["M"]
+                contact = cl.getContact(key1)
+                cu = cl.channel.getCover(key1)
+                try:
+                    cl.sendText(msg.to,"[name]\n" + contact.displayName + "\n[mid]\n" + contact.mid + "\n[statusmessage]\n" + contact.statusMessage + "\n[profilePicture]\nhttp://dl.profile.line-cdn.net/" + contact.pictureStatus + "\n[homePicture]\n" + str(cu))
+                except:
+                    cl.sendText(msg.to,"[name]\n" + contact.displayName + "\n[mid]\n" + contact.mid + "\n[statusmessage]\n" + contact.statusMessage + "\n[homePicture]\n" + str(cu))
+#=============================================
+            elif msg.text in ["Sp"]:
                 start = time.time()
-                cl.sendText(msg.to, "Waiting...")
+                cl.sendText(msg.to, "•͜͡S͜͡p͜͡e͜͡e͜͡e͜͡d✯͜͡в͜͡о͜͡т✯͜͡κ͜͡ɪ͜͡c͜͡κ͜͡є͜͡ʀ•")
                 elapsed_time = time.time() - start
-                cl.sendText(msg.to, "%sTamii Server" % (elapsed_time))
+                cl.sendText(msg.to, "•─ ͜͡✫ѕєʟғвот﴾ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅﴿κɪcκєʀ ͜͡✫─•\nความเร็ว%sต่อวินาที" % (elapsed_time))
 # ----------------- BAN MEMBER BY TAG 2TAG ATAU 10TAG MEMBER
             elif ("Bl " in msg.text):
               if msg.from_ in admin:
