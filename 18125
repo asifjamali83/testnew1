@@ -7,47 +7,47 @@ from urllib import urlopen
 from threading import Thread
 
 cl = LINETCR.LINE()
-cl.login(token="EoHgjzyz5WI48XdiquM5.0KR2p9yTfmo+J3gD/aW3rq.HkMXyTK4Op+rqe33EBquYkRGImQrnZVvPfiKl+3TKQ8=")
+cl.login(token="...")
 cl.loginResult()
 
 ki1 = LINETCR.LINE()
-ki1.login(token="EoTeWFArczZluSiMbprc.HoR1JnsB+4qeb6VJ+e21Na.OYO6OQOngCQ4HHgPfr89kI1RQRk0NzWtRxUIH9GjiMA=")
+ki1.login(token="...")
 ki1.loginResult()
 
 ki2 = LINETCR.LINE()
-ki2.login(token="EobErhJU9s8AFSEH2v91.0yBG21qsxOytdiizPZNOOq.jFKXCZ3/3cGlzdjAgvk6wRTtDR/y/I3TCSGwMDkUrFU=")
+ki2.login(token="...")
 ki2.loginResult()
 
 ki3 = LINETCR.LINE()
-ki3.login(token="EoISRJmpFIlt4vAepema.TvetDTQOiFfoCjE8lx6qQG.Nh+A4SHPj08YnBhtOEggufiOcXE2KwNA63Pg/fYfwjk=")
+ki3.login(token="...")
 ki3.loginResult()
 
 ki4 = LINETCR.LINE()
-ki4.login(token="EoeXjtmxTWBTh1vPa193.k4Za5/UEgS3xASuSVtbn4W.wmw0lEhkelsAUu582EAbJyng2jYrnmJD2djCa9iEa3k=")
+ki4.login(token="...")
 ki4.loginResult()
 
 ki5 = LINETCR.LINE()
-ki5.login(token="Eol4uhPLmephFDtq2ska.s/dq/M0GLZkiMLYg3XHlcG.gt7oN/BbqWEKdYO0Hgg9XVMmsnVqZx9TVhyg1AgHEKU=")
+ki5.login(token="...")
 ki5.loginResult()
 
 ki6 = LINETCR.LINE()
-ki6.login(token="Eos1fJesozHwLIpMjep8.fKk7jKzQ5mzh1YnPidc0ga.znD9fbBd65YV1O824ztfXzEJLBEz1WxS0or5hmOvSYg=")
+ki6.login(token="...")
 ki6.loginResult()
 
 ki7 = LINETCR.LINE()
-ki7.login(token="EoQn29gmazTjPGFDY0b2.GEJaLf18HIrlmEJ3dKxw4G.218UbCeF+/cWWPjd5rrUNcEaLg4vcxJL/g7BKu0OIi8=")
+ki7.login(token="...")
 ki7.loginResult()
 
 ki8 = LINETCR.LINE()
-ki8.login(token="EoP79w32MHjVLpnjFAUb.R+TwP1t4enhkFeLLHqn0sW.H8rNiCk3KJ4P3CsNexMA0g6fBbuAxpZ0lXLyTT6yY14=")
+ki8.login(token="...")
 ki8.loginResult()
 
 ki9 = LINETCR.LINE()
-ki9.login(token="EoYZG6RQxnzmsneXeGK8.PHu9Jj2QfTEzOzCw7q5q/a.oQir1PeyQyQ+tbvFvmUzxhop1LA/n+9egM6sRmb4wh8=")
+ki9.login(token="...")
 ki9.loginResult()
 
 ki10 = LINETCR.LINE()
-ki10.login(token="EoZa36TazRHaL4gp7Ey9.SToq+Adh7am3maMPFEVM/q.PXyfBFhDNLQbL/JP8oOwMB4wCVEqh2gJu159mXATmWI=")
+ki10.login(token="...")
 ki10.loginResult()
 
 print "login success"
