@@ -6,79 +6,79 @@ import time,random,sys,json,codecs,threading,glob,requests,urllib
 #import time,random,sys,json,codecs,threading,glob,re
 
 cl = LINETCR.LINE()
-cl.login(token="EnHgjzyz5WI48XdiquM5.0KR2p9yTfmo+J3gD/aW3rq.HkMXyTK4Op+rqe33EBquYkRGImQrnZVvPfiKl+3TKQ8=")
+cl.login(token="...")
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(token="EnTeWFArczZluSiMbprc.HoR1JnsB+4qeb6VJ+e21Na.OYO6OQOngCQ4HHgPfr89kI1RQRk0NzWtRxUIH9GjiMA=")
+ki.login(token="...")
 ki.loginResult()
 
 kk = LINETCR.LINE()
-kk.login(token="EnbErhJU9s8AFSEH2v91.0yBG21qsxOytdiizPZNOOq.jFKXCZ3/3cGlzdjAgvk6wRTtDR/y/I3TCSGwMDkUrFU=")
+kk.login(token="...")
 kk.loginResult()
 
 kc = LINETCR.LINE()
-kc.login(token="EnISRJmpFIlt4vAepema.TvetDTQOiFfoCjE8lx6qQG.Nh+A4SHPj08YnBhtOEggufiOcXE2KwNA63Pg/fYfwjk=")
+kc.login(token="...")
 kc.loginResult()
 
 kd = LINETCR.LINE()
-kd.login(token="EneXjtmxTWBTh1vPa193.k4Za5/UEgS3xASuSVtbn4W.wmw0lEhkelsAUu582EAbJyng2jYrnmJD2djCa9iEa3k=")
+kd.login(token="...")
 kd.loginResult()
 
 ke = LINETCR.LINE()
-ke.login(token="Enl4uhPLmephFDtq2ska.s/dq/M0GLZkiMLYg3XHlcG.gt7oN/BbqWEKdYO0Hgg9XVMmsnVqZx9TVhyg1AgHEKU=")
+ke.login(token="...")
 ke.loginResult()
 
 kf = LINETCR.LINE()
-kf.login(token="Ens1fJesozHwLIpMjep8.fKk7jKzQ5mzh1YnPidc0ga.znD9fbBd65YV1O824ztfXzEJLBEz1WxS0or5hmOvSYg=")
+kf.login(token="...")
 kf.loginResult()
 
 kg = LINETCR.LINE()
-kg.login(token="EnQn29gmazTjPGFDY0b2.GEJaLf18HIrlmEJ3dKxw4G.218UbCeF+/cWWPjd5rrUNcEaLg4vcxJL/g7BKu0OIi8=")
+kg.login(token="...")
 kg.loginResult()
 
 kh = LINETCR.LINE()
-kh.login(token="EnP79w32MHjVLpnjFAUb.R+TwP1t4enhkFeLLHqn0sW.H8rNiCk3KJ4P3CsNexMA0g6fBbuAxpZ0lXLyTT6yY14=")
+kh.login(token="...")
 kh.loginResult()
 
 kj = LINETCR.LINE()
-kj.login(token="EnYZG6RQxnzmsneXeGK8.PHu9Jj2QfTEzOzCw7q5q/a.oQir1PeyQyQ+tbvFvmUzxhop1LA/n+9egM6sRmb4wh8=")
+kj.login(token="...")
 kj.loginResult()
 
 kl = LINETCR.LINE()
-kl.login(token="EnZa36TazRHaL4gp7Ey9.SToq+Adh7am3maMPFEVM/q.PXyfBFhDNLQbL/JP8oOwMB4wCVEqh2gJu159mXATmWI=")
+kl.login(token="...")
 kl.loginResult()
 
 km = LINETCR.LINE()
-km.login(token="EnO48AQaaLXSxdUSSkQ6.AEksypRHUUmnTL3iWKWpfG.eUUo3mLyr8Bwh+llmbWdhCITeDpfJd9o/0/RQurg1v4=")
+km.login(token="...")
 km.loginResult()
 
 kn = LINETCR.LINE()
-kn.login(token="EnI7ndn1IyE6Mor0Gz38.1vrheGCJ1zMYVolwEXtRca.OoKEbzMRtX1jym7eloKBr5vs9Rjtv4E2P2iRf72DveE=")
+kn.login(token="...")
 kn.loginResult()
 
 ko = LINETCR.LINE()
-ko.login(token="Enen6OIGdUMNAYvERwJ5.tPDsUdJZXvKPQOUc44Txrq.1SJkB27BtOk1ZVTmSFCQqKtE59sQc8+iP+WWZpsayGY=")
+ko.login(token="...")
 ko.loginResult()
 
 kp = LINETCR.LINE()
-kp.login(token="EnDfKQkcMqUNDSkNp1H4.h3P92CCPLrvuZl+/sjgTHa.T1wKx0/COlJI55cM1bSvqyGnrrYcUAhIjOMbglkgvBU=")
+kp.login(token="...")
 kp.loginResult()
 
 kq = LINETCR.LINE()
-kq.login(token="Enlh20xiL8E0Qrh5ywyf.c/m8IinMdlKmygHk0drlJW.ViQVI7igaFpSizRfZWtjYnIcB6YI5pItsYm/7ODRC6I=")
+kq.login(token="...")
 kq.loginResult()
 
 kr = LINETCR.LINE()
-kr.login(token="EnNR37Tz4OQkYgTNn1F8.ZljcgNhbjqeW/41Qp39iga.K111mBj65j26ttzEzG+n5vPF7yN7qisxiMXQx39Zlpg=")
+kr.login(token="...")
 kr.loginResult()
 
 ks = LINETCR.LINE()
-ks.login(token="En2dZD2xAHfaWTQNtys8.AFMsOTwU/bnGPo2Fn+vVAa.0bIipzf+wbChCvJM8rWnBgCoDrp0wMFEHJF9gWaMLrI=")
+ks.login(token="...")
 ks.loginResult()
 
 kt = LINETCR.LINE()
-kt.login(token="EnsQDTilJW7J1f34tlPf.5c3SW9UdZcMFeDtPu+MRNW.EaYO4/iOiijzpi0eAe9WAK6j94yusNvDTDkW6+K10pU=")
+kt.login(token="...")
 kt.loginResult()
 
 cl
@@ -436,11 +436,11 @@ http://line.me/ti/p/~security_botline
      ️📛ย้ำ แอดเพื่อน ควรเด้งแชท📛
 
 ──────┅═ই۝ई═┅──────
-รับทำเชลบอทกันรัน (บอทส่วนตัว)
+รับทำเชลบอทกันรัน (บอทส่วนตัว) แท๊กได้ทั้งกลุ่ม
 สนใจติดต่อที่  ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ
 🆔http://line.me/ti/p/~1ove..neverdie
 နับთิஏთั้ଏบਹທ  Sirichan V⒑
-📧https://line.me/R/ti/p/%40uvh1233u
+http://line.me/ti/p/~security_botline
 ──────┅═ই۝ई═┅──────
 """,
     "lang":"JP",
