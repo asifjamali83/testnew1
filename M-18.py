@@ -223,9 +223,9 @@ http://line.me/ti/p/~1ove..neverdie
 [Help] - [Help2] - [Helpbot]
   [Set protect] - [Man set]
 ──────┅═ই۝ई═┅──────
-      နับთิஏთั้ଏบਹທ Sirichan V⒑
+နับთิஏთั้ଏบਹທV⒑ ทำเชลบอทกันรัน แท๊กได้ทั้งกลุ่ม
 สนใจติดต่อที่ •─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•
-https://line.me/R/ti/p/%40uvh1233u
+http://line.me/ti/p/~security_botline
 ──────┅═ই۝ई═┅──────   
 """
 helpMessage2 ="""Mr. Bots…⛿
@@ -233,7 +233,7 @@ helpMessage2 ="""Mr. Bots…⛿
 ║║║║║║║║    ✯✯❇ᵀᴴᴬᴵᴸᴬᴺᴰ❇✯✯
 ║║║║╦║║║  ❇͜͡C͜͡r͜͡e͜͡a͜͡t͜͡o͜͡r✯͜͡$͜͡ë͜͡I͜͡F͜͡-͜͡฿͜͡o͜͡Ŧ❇
 ╚╩╩╩╩╩╩╝️ နับთิஏთั้ଏบਹທ SirichanV⒑
-📧https://line.me/R/ti/p/%40uvh1233u
+http://line.me/ti/p/~1ove..neverdie
 ╔═════════════════════╗
 ║•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•
 ╠═════════════════════╝
@@ -2489,6 +2489,111 @@ def bot(op):
             if msg.contentType == 16:
                 url = msg.contentMetadata("line://home/post?userMid="+mid+"&postId="+"new_post")
                 cl.like(url[25:58], url[66:], likeType=1001)
+		
+        if op.type == 26:
+            msg = op.message
+            if msg.to in settings["simiSimi"]:
+                if settings["simiSimi"][msg.to] == True:
+                    if msg.text is not None:
+                        text = msg.text
+                        r = requests.get("http://api.ntcorp.us/chatbot/v1/?text=" + text.replace(" ","+") + "&key=beta1.nt")
+                        data = r.text
+                        data = json.loads(data)
+                        if data['status'] == 200:
+                            if data['result']['result'] == 100:
+                                cl.sendText(msg.to, "[ChatBOT] " + data['result']['response'].encode('utf-8'))
+     
+            if 'MENTION' in msg.contentMetadata.keys() != None:
+                 if wait["detectMention"] == True:
+                     contact = cl.getContact(msg.from_)
+                     cName = contact.displayName
+                     balas = ["Dont Tag Me!! Im Busy",cName + " Ngapain Ngetag?",cName + " Nggak Usah Tag-Tag! Kalo Penting Langsung Pc Aja","-_-","Alin lagi off", cName + " Kenapa Tag saya?","SPAM PC aja " + cName, "Jangan Suka Tag gua " + cName, "Kamu siapa " + cName + "?", "Ada Perlu apa " + cName + "?","Tenggelamkan tuh yang suka tag pake BOT","Tersummon -_-"]
+                     ret_ = "[Auto Respond] " + random.choice(balas)
+                     name = re.findall(r'@(\w+)', msg.text)
+                     mention = ast.literal_eval(msg.contentMetadata['MENTION'])
+                     mentionees = mention['MENTIONEES']
+                     for mention in mentionees:
+                           if mention['M'] in Bots:
+                                  cl.sendText(msg.to,ret_)
+                                  break
+
+            if 'MENTION' in msg.contentMetadata.keys() != None:
+                 if wait["detectMention"] == True:
+                     contact = cl.getContact(msg.from_)
+                     cName = contact.displayName
+                     balas = ["Dont Tag Me!! Im Busy",cName + ""]
+                     ret_ = "[Auto] " + random.choice(balas)
+                     name = re.findall(r'@(\w+)', msg.text)
+                     mention = ast.literal_eval(msg.contentMetadata['MENTION'])
+                     mentionees = mention['MENTIONEES']
+                     for mention in mentionees:
+                           if mention['M'] in Bots:
+                                  cl.sendText(msg.to,ret_)
+                                  msg.contentType = 7
+                                  msg.text = ''
+                                  msg.contentMetadata = {
+                                                            'STKPKGID': '608',
+                                                            'STKTXT': '[]',
+                                                            'STKVER': '16',
+                                                            'STKID':'5507'
+                                                        }
+                                  cl.sendMessage(msg)
+                                  break
+
+            if 'MENTION' in msg.contentMetadata.keys() != None:
+                 if wait["kickMention"] == True:
+                     contact = cl.getContact(msg.from_)
+                     cName = contact.displayName
+                     balas = ["Dont Tag Me!! Im Busy",cName + " Ngapain Ngetag?",cName + " Nggak Usah Tag-Tag! Kalo Penting Langsung Pc Aja","-_-","Alin lagi off", cName + " Kenapa Tag saya?","SPAM PC aja " + cName, "Jangan Suka Tag gua " + cName, "Kamu siapa " + cName + "?", "Ada Perlu apa " + cName + "?","Tenggelamkan tuh yang suka tag pake BOT","Tersummon -_-"]
+                     ret_ = "[Auto Respond] " + random.choice(balas)
+                     name = re.findall(r'@(\w+)', msg.text)
+                     mention = ast.literal_eval(msg.contentMetadata['MENTION'])
+                     mentionees = mention['MENTIONEES']
+                     for mention in mentionees:
+                           if mention['M'] in Bots:
+                                  cl.sendText(msg.to,ret_)
+                                  cl.kickoutFromGroup(msg.to,[msg.from_])
+                                  break
+
+            if msg.contentType == 13:
+                if wait["steal"] == True:
+                    _name = msg.contentMetadata["displayName"]
+                    copy = msg.contentMetadata["mid"]
+                    groups = cl.getGroup(msg.to)
+                    pending = groups.invitee
+                    targets = []
+                    for s in groups.members:
+                        if _name in s.displayName:
+                            print "[Target] Stealed"
+                            break
+                        else:
+                            targets.append(copy)
+                    if targets == []:
+                        pass
+                    else:
+                        for target in targets:
+                            try:
+                                cl.findAndAddContactsByMid(target)
+                                contact = cl.getContact(target)
+                                cu = cl.channel.getCover(target)
+                                path = str(cu)
+                                image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
+                                cl.sendText(msg.to,"Nama :\n" + contact.displayName + "\n\nMid :\n" + msg.contentMetadata["mid"] + "\n\nBio :\n" + contact.statusMessage)
+                                cl.sendText(msg.to,"Profile Picture " + contact.displayName)
+                                cl.sendImageWithUrl(msg.to,image)
+                                cl.sendText(msg.to,"Cover " + contact.displayName)
+                                cl.sendImageWithUrl(msg.to,path)
+                                wait["steal"] = False
+                                break
+                            except:
+                                    pass
+	    
+            if wait["alwayRead"] == True:
+                if msg.toType == 0:
+                    cl.sendChatChecked(msg.from_,msg.id)                                             
+                else:
+                    cl.sendChatChecked(msg.to,msg.id)
+#=================================================
         if op.type == 25:
             msg = op.message
             if msg.text.lower() in ["mention"]:
