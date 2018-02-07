@@ -1925,13 +1925,13 @@ def bot(op):
                     cl.sendText(msg.to, helpMessage + "")
                 else:
                     cl.sendText(msg.to,helpt)
-            elif msg.text in ["Cmd"]:
+            elif msg.text in ["Help man","Manhelp","Man help"]:
                 print "\nHelp pick up..."
                 if wait["lang"] == "JP":
                     cl.sendText(msg.to, helpMessage2 + "")
                 else:
                     cl.sendText(msg.to,helpt)
-            elif msg.text in ["Help2","Sett"]:
+            elif msg.text in ["Help2","hp2"]:
                 print "\nHelp pick up..."
                 if wait["lang"] == "JP":
                     cl.sendText(msg.to, helpMessage3 + "")
