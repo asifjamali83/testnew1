@@ -29,58 +29,6 @@ ke = LINETCR.LINE()
 ke.login(token="...")
 ke.loginResult()
 
-kf = LINETCR.LINE()
-kf.login(token="...")
-kf.loginResult()
-
-kg = LINETCR.LINE()
-kg.login(token="...")
-kg.loginResult()
-
-kh = LINETCR.LINE()
-kh.login(token="...")
-kh.loginResult()
-
-kj = LINETCR.LINE()
-kj.login(token="...")
-kj.loginResult()
-
-kl = LINETCR.LINE()
-kl.login(token="...")
-kl.loginResult()
-
-km = LINETCR.LINE()
-km.login(token="...")
-km.loginResult()
-
-kn = LINETCR.LINE()
-kn.login(token="...")
-kn.loginResult()
-
-ko = LINETCR.LINE()
-ko.login(token="...")
-ko.loginResult()
-
-kp = LINETCR.LINE()
-kp.login(token="...")
-kp.loginResult()
-
-kq = LINETCR.LINE()
-kq.login(token="...")
-kq.loginResult()
-
-kr = LINETCR.LINE()
-kr.login(token="...")
-kr.loginResult()
-
-ks = LINETCR.LINE()
-ks.login(token="...")
-ks.loginResult()
-
-kt = LINETCR.LINE()
-kt.login(token="...")
-kt.loginResult()
-
 cl
 
 print "login success"
@@ -280,26 +228,13 @@ http://line.me/ti/p/~1ove..neverdie
 ╚═════════════════════╝
 """
 
-KAC=[cl,ki,kk,kc,kd,ke,kf,kg,kh,kj,kl,km,kn,ko,kp,kq,kr,ks,kt]
+KAC=[cl,ki,kk,kc,kd,ke]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
 Dmid = kd.getProfile().mid
 Emid = ke.getProfile().mid
-Fmid = kf.getProfile().mid
-Gmid = kg.getProfile().mid
-Hmid = kh.getProfile().mid
-Jmid = kj.getProfile().mid
-Lmid = kl.getProfile().mid
-Mmid = km.getProfile().mid
-Nmid = kn.getProfile().mid
-Omid = ko.getProfile().mid
-Pmid = kp.getProfile().mid
-Qmid = kq.getProfile().mid
-Rmid = kr.getProfile().mid
-Smid = ks.getProfile().mid
-Tmid = kt.getProfile().mid
 protectname = []
 protecturl = []
 protection = []
@@ -307,8 +242,8 @@ autocancel = {}
 autoinvite = []
 autoleaveroom = []
 targets = []
-Bots = ["ud24af63fd62d14c3bf8f719df80c3745",mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Jmid,Lmid,Mmid,Nmid,Omid,Pmid,Qmid,Rmid,Smid,Tmid]
-self = ["ud24af63fd62d14c3bf8f719df80c3745",mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Jmid,Lmid,Mmid,Nmid,Omid,Pmid,Qmid,Rmid,Smid,Tmid]
+Bots = ["ud24af63fd62d14c3bf8f719df80c3745",mid,Amid,Bmid,Cmid,Dmid,Emid]
+self = ["ud24af63fd62d14c3bf8f719df80c3745",mid,Amid,Bmid,Cmid,Dmid,Emid]
 admin = "ud24af63fd62d14c3bf8f719df80c3745"
 owner = "ud24af63fd62d14c3bf8f719df80c3745"
 admsa = "ud24af63fd62d14c3bf8f719df80c3745"
@@ -521,84 +456,6 @@ backup.pictureStatus = contact.pictureStatus
 
 contact = ke.getProfile()
 backup = ke.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
-contact = kf.getProfile()
-backup = kf.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
-contact = kg.getProfile()
-backup = kg.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
-contact = kh.getProfile()
-backup = kh.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
-contact = kj.getProfile()
-backup = kj.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
-contact = kl.getProfile()
-backup = kl.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
-contact = km.getProfile()
-backup = km.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
-contact = kn.getProfile()
-backup = kn.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
-contact = ko.getProfile()
-backup = ko.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
-contact = kp.getProfile()
-backup = kp.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
-contact = kq.getProfile()
-backup = kq.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
-contact = kr.getProfile()
-backup = kr.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
-contact = ks.getProfile()
-backup = ks.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
-contact = kt.getProfile()
-backup = kt.getProfile()
 backup.displayName = contact.displayName
 backup.statusMessage = contact.statusMessage
 backup.pictureStatus = contact.pictureStatus
@@ -1192,7 +1049,7 @@ def bot(op):
             if not op.param2 in Bots:
                 if wait["protectionOn"] == True: 
                     try:
-                        klist=[ki,kk,kc,kd,ke,kf,kg,kh,kj,kl,km,kn,ko,kp,kq,kr,ks,kt]
+                        klist=[ki,kk,kc,kd,ke]
                         kicker = random.choice(klist) 
                         G = kicker.getGroup(op.param1)
                         kicker.kickoutFromGroup(op.param1,[op.param2])
@@ -1273,7 +1130,7 @@ def bot(op):
             if not op.param2 in Bots:
               if wait["qr"] == True:  
                 try:
-                    klist=[ki,kk,kc,kd,ke,kf,kg,kh,kj,kl,km,kn,ko,kp,kq,kr,ks,kt]
+                    klist=[ki,kk,kc,kd,ke]
                     kicker = random.choice(klist) 
                     G = kicker.getGroup(op.param1)
                     G.preventJoinByTicket = True
@@ -1284,7 +1141,7 @@ def bot(op):
             if not op.param2 in Bots:
               if wait["protectionOn"] == True:
                  try:                    
-                    klist=[ki,kk,kc,kd,ke,kf,kg,kh,kj,kl,km,kn,ko,kp,kq,kr,ks,kt]
+                    klist=[ki,kk,kc,kd,ke]
                     kicker = random.choice(klist) 
                     G = kicker.getGroup(op.param1)
                     G.preventJoinByTicket = True
@@ -1299,7 +1156,7 @@ def bot(op):
             I = G.creator
             if not op.param2 in Bots:
                 if wait["protectionOn"] == True:  
-                    klist=[ki,kk,kc,kd,ke,kf,kg,kh,kj,kl,km,kn,ko,kp,kq,kr,ks,kt]
+                    klist=[ki,kk,kc,kd,ke]
                     kicker = random.choice(klist)
                     G = kicker.getGroup(op.param1)
                     if G is not None:
@@ -1330,7 +1187,7 @@ def bot(op):
                 if not op.param2 in Bots:
                   if wait["protectionOn"] == True:  
                    try:
-                       klist=[ki,kk,kc,kd,ke,kf,kg,kh,kj,kl,km,kn,ko,kp,kq,kr,ks,kt]
+                       klist=[ki,kk,kc,kd,ke]
                        kicker = random.choice(klist)
                        G = kicker.getGroup(op.param1)
                        G.preventJoinByTicket = False
@@ -3047,18 +2904,6 @@ def bot(op):
                 kc.removeAllMessages(op.param2)
                 kd.removeAllMessages(op.param2)
                 ke.removeAllMessages(op.param2)
-                kf.removeAllMessages(op.param2)
-                kg.removeAllMessages(op.param2)
-                kh.removeAllMessages(op.param2)
-                kj.removeAllMessages(op.param2)
-		kl.removeAllMessages(op.param2)                km.removeAllMessages(op.param2)
-		kn.removeAllMessages(op.param2)
-                ko.removeAllMessages(op.param2)
-                kp.removeAllMessages(op.param2)
-                kq.removeAllMessages(op.param2)
-		kr.removeAllMessages(op.param2)
-                ks.removeAllMessages(op.param2)
-                kt.removeAllMessages(op.param2)
                 cl.sendText(msg.to,"❇️Delete Chat Bot❇️")
                 cl.sendText(msg.to,"──────┅═ই۝ई═┅──────\n•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\nได้เคลียร์แชทบอท 18Kicker เรียบร้อย\n──────┅═ই۝ई═┅──────")
 #-----------------------------------------------------------
@@ -3074,19 +2919,19 @@ def bot(op):
                        kc.sendText(g.mid,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
                        kd.sendText(g.mid,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
                        ke.sendText(g.mid,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
-                       kf.sendText(g.mid,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
-                       kg.sendText(g.mid,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
-                       kh.sendText(g.mid,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
-                       kj.sendText(g.mid,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
-                       kl.sendText(g.mid,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
-                       km.sendText(g.mid,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
-                       kn.sendText(g.mid,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
-                       ko.sendText(g.mid,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
-                       kp.sendText(g.mid,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
-                       kq.sendText(g.mid,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
-                       kr.sendText(g.mid,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
-                       ks.sendText(g.mid,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
-                       kt.sendText(g.mid,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
+                       ki.sendText(g.mid,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
+                       kk.sendText(g.mid,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
+                       kc.sendText(g.mid,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
+                       kd.sendText(g.mid,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
+                       ke.sendText(g.mid,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
+                       ki.sendText(g.mid,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
+                       kk.sendText(g.mid,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
+                       kc.sendText(g.mid,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
+                       kd.sendText(g.mid,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
+                       ke.sendText(g.mid,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
+                       ki.sendText(g.mid,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
+                       kk.sendText(g.mid,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
+                       kc.sendText(g.mid,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
                        cl.sendText(msg.to, "Done...S.P.A.M \n •─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─• ")
                        print "Berhasil Spam Kontak"
 
@@ -3103,19 +2948,6 @@ def bot(op):
                             kc.sendText(msg.to,teks)
                             kd.sendText(msg.to,teks)
                             ke.sendText(msg.to,teks)
-                            kf.sendText(msg.to,teks)
-                            kg.sendText(msg.to,teks)
-                            kh.sendText(msg.to,teks)
-                            kj.sendText(msg.to,teks)
-                            kl.sendText(msg.to,teks)
-                            km.sendText(msg.to,teks)
-                            kn.sendText(msg.to,teks)
-                            ko.sendText(msg.to,teks)
-                            kp.sendText(msg.to,teks)
-                            kq.sendText(msg.to,teks)
-                            kr.sendText(msg.to,teks)
-                            ks.sendText(msg.to,teks)
-                            kt.sendText(msg.to,teks)
 #----------------------------------------------------------
             elif msg.text in ["Conban","ข้อมูลบัญชีดำ","Contact ban","คท. ดำ"]:
                 if wait["blacklist"] == {}:
@@ -3305,19 +3137,6 @@ def bot(op):
                 kc.sendMessage(msg)
                 kd.sendMessage(msg)
                 ke.sendMessage(msg)
-                kf.sendMessage(msg)
-                kg.sendMessage(msg)
-                kh.sendMessage(msg)
-                kj.sendMessage(msg)
-                kl.sendMessage(msg)
-                km.sendMessage(msg)
-                kn.sendMessage(msg)
-                ko.sendMessage(msg)
-                kp.sendMessage(msg)
-                kq.sendMessage(msg)
-                kr.sendMessage(msg)
-		ks.sendMessage(msg)
-                kt.sendMessage(msg)
 
             #VPS STUFF - VPS NEEDED TO RUN THIS COMMAND :)
             elif msg.text in ["vps","kernel"]:
@@ -3580,19 +3399,6 @@ def bot(op):
                         kc.acceptGroupInvitationByTicket(msg.to,Ticket)
                         kd.acceptGroupInvitationByTicket(msg.to,Ticket)
                         ke.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        kf.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        kg.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        kh.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        kj.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        kl.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        km.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        kn.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        ko.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        kp.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        kq.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        kr.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        ks.acceptGroupInvitationByTicket(msg.to,Ticket)
-                        kt.acceptGroupInvitationByTicket(msg.to,Ticket)
                         ki.sendText(msg.to,"Hello " + str(ginfo.name) + "\n\nBy•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─• \n📧https://line.me/R/ti/p/%40uvh1233u")
                         G = cl.getGroup(msg.to)
                         ginfo = cl.getGroup(msg.to)
@@ -3615,32 +3421,6 @@ def bot(op):
                         kd.leaveGroup(msg.to)
                         ke.sendText(msg.to,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\n Bye~Bye ["  +  str(ginfo.name)  + "]")
                         ke.leaveGroup(msg.to)
-                        kf.sendText(msg.to,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\n Bye~Bye ["  +  str(ginfo.name)  + "]")
-                        kf.leaveGroup(msg.to)
-                        kg.sendText(msg.to,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\n Bye~Bye ["  +  str(ginfo.name)  + "]")
-                        kg.leaveGroup(msg.to)
-                        kh.sendText(msg.to,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\n Bye~Bye ["  +  str(ginfo.name)  + "]")
-                        kh.leaveGroup(msg.to)
-                        kj.sendText(msg.to,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\n Bye~Bye ["  +  str(ginfo.name)  + "]")
-                        kj.leaveGroup(msg.to)
-                        kl.sendText(msg.to,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\n Bye~Bye ["  +  str(ginfo.name)  + "]")
-                        kl.leaveGroup(msg.to)
-                        km.sendText(msg.to,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\n Bye~Bye ["  +  str(ginfo.name)  + "]")
-                        km.leaveGroup(msg.to)
-                        kn.sendText(msg.to,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\n Bye~Bye ["  +  str(ginfo.name)  + "]")
-                        kn.leaveGroup(msg.to)
-                        ko.sendText(msg.to,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\n Bye~Bye ["  +  str(ginfo.name)  + "]")
-                        ko.leaveGroup(msg.to)
-                        kp.sendText(msg.to,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\n Bye~Bye ["  +  str(ginfo.name)  + "]")
-                        kp.leaveGroup(msg.to)
-                        kq.sendText(msg.to,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\n Bye~Bye ["  +  str(ginfo.name)  + "]")
-                        kq.leaveGroup(msg.to)
-                        kr.sendText(msg.to,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\n Bye~Bye ["  +  str(ginfo.name)  + "]")
-                        kr.leaveGroup(msg.to)
-                        ks.sendText(msg.to,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\n Bye~Bye ["  +  str(ginfo.name)  + "]")
-                        ks.leaveGroup(msg.to)
-                        kt.sendText(msg.to,"•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\n Bye~Bye ["  +  str(ginfo.name)  + "]")
-                        kt.leaveGroup(msg.to)
                     except:
                         pass
 
@@ -3764,7 +3544,7 @@ http://line.me/ti/p/~security_botline
 สนใจติดต่อที่  ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ
 🆔http://line.me/ti/p/~1ove..neverdie
 နับთิஏთั้ଏบਹທ  Sirichan V⒑
-📧https://line.me/R/ti/p/%40uvh1233u
+http://line.me/ti/p/~security_botline
 ──────┅═ই۝ई═┅──────
 """)
 #-------------------------------------------------
@@ -3820,7 +3600,7 @@ http://line.me/ti/p/~security_botline
                         cl.sendText(msg.to,"Not for use less than group")
             elif msg.text in ["บอทยกเลิก"]:
                 if msg.toType == 2:
-                    klist=[kj,kh,kg,kf,ke,kd,kc,kk,ki,kn,ko,kp,kq,kr,ks,kt]
+                    klist=[ke,kd,kc,kk,ki]
                     kicker = random.choice(klist)
                     G = kicker.getGroup(msg.to)
                     if G.invitee is not None:
@@ -3980,20 +3760,7 @@ http://line.me/ti/p/~security_botline
 			kc.sendText(msg.to,Cmid)
 			kd.sendText(msg.to,Dmid)
 			ke.sendText(msg.to,Emid)
-			kf.sendText(msg.to,Fmid)
-			kg.sendText(msg.to,Gmid)
-			kh.sendText(msg.to,Hmid)
-			kj.sendText(msg.to,Jmid)
-			kl.sendText(msg.to,Lmid)
-			km.sendText(msg.to,Mmid)
-			kn.sendText(msg.to,Nmid)
-			ko.sendText(msg.to,Omid)
-			kp.sendText(msg.to,Pmid)
-			kq.sendText(msg.to,Qmid)
-			kr.sendText(msg.to,Rmid)
-			ks.sendText(msg.to,Smid)
-			kt.sendText(msg.to,Tmid)
-
+	
             elif ("Hack: " in msg.text):
                    key = eval(msg.contentMetadata["MENTION"])
                    key1 = key["MENTIONEES"][0]["M"]
@@ -4024,12 +3791,12 @@ http://line.me/ti/p/~security_botline
 [Ban @]+[Kill-Kill ban]\n
 [Conban] + [คท. ดำ]\n
 [Cb] Clear blacklist\n
-[Nk  @] + [??¿  @]\n
+[Nk  @] + [@]\n
 [M1 kick - M9 kick  @]\n\n
   <😏_/\n
-    \\n
-     \\n
-   _/🍆\_\n
+    \
+     \
+   _/🍆\_
 www.หรรมใหญ่โว้ย.com （´・ω・｀）\n
 ──────┅═ই۝ई═┅──────\n
 နับთิஏთั้ଏบਹທ  Sirichan V⒑\n
@@ -4124,19 +3891,6 @@ http://line.me/ti/p/~1ove..neverdie\n
                                 kc.sendText(msg.to,(bctxt))
                                 kd.sendText(msg.to,(bctxt))
                                 ke.sendText(msg.to,(bctxt))
-                                kf.sendText(msg.to,(bctxt))
-                                kg.sendText(msg.to,(bctxt))
-                                kh.sendText(msg.to,(bctxt))
-                                kj.sendText(msg.to,(bctxt))
-                                kl.sendText(msg.to,(bctxt))
-                                km.sendText(msg.to,(bctxt))
-                                kn.sendText(msg.to,(bctxt))
-                                ko.sendText(msg.to,(bctxt))
-                                kp.sendText(msg.to,(bctxt))
-                                kq.sendText(msg.to,(bctxt))
-                                kr.sendText(msg.to,(bctxt))
-                                ks.sendText(msg.to,(bctxt))
-                                kt.sendText(msg.to,(bctxt))
 
             elif "Tl: " in msg.text:
                 tl_text = msg.text.replace("Tl: ","")
