@@ -720,24 +720,24 @@ def bot(op):
                         Ti = ke.reissueGroupTicket(op.param1)
                 if op.param3 in Emid:
                     if op.param2 in mid:
-                        X = kf.getGroup(op.param1)
+                        X = cl.getGroup(op.param1)
                         X.preventJoinByTicket = False
-                        kf.updateGroup(X)
-                        Ti = kf.reissueGroupTicket(op.param1)
+                        cl.updateGroup(X)
+                        Ti = cl.reissueGroupTicket(op.param1)
                         ke.acceptGroupInvitationByTicket(op.param1,Ticket)
                         X.preventJoinByTicket = True
-                        kf.updateGroup(X)
-                        Ti = kf.reissueGroupTicket(op.param1)
+                        cl.updateGroup(X)
+                        Ti = cl.reissueGroupTicket(op.param1)
                 if op.param3 in mid:
-                    if op.param2 in Nmid:
-                        G = kn.getGroup(op.param1)
+                    if op.param2 in Emid:
+                        G = ke.getGroup(op.param1)
                         G.preventJoinByTicket = False
-                        kn.updateGroup(G)
-                        Ticket = kn.reissueGroupTicket(op.param1)
+                        ke.updateGroup(G)
+                        Ticket = ke.reissueGroupTicket(op.param1)
                         cl.acceptGroupInvitationByTicket(op.param1,Ticket)
                         G.preventJoinByTicket = True
-                        kn.updateGroup(G)
-                        Ticket = kn.reissueGroupTicket(op.param1)
+                        ke.updateGroup(G)
+                        Ticket = ke.reissueGroupTicket(op.param1)
 
                 if op.param3 in mid:
                     if op.param2 in Amid:
@@ -1265,7 +1265,7 @@ def bot(op):
                     ke.acceptGroupInvitationByTicket(op.param1,Ti)
                     X = cl.getGroup(op.param1)
                     X.preventJoinByTicket = True
-                    ks.updateGroup(X)
+                    cl.updateGroup(X)
                     Ticket = cl.reissueGroupTicket(op.param1)                    
                     if op.param2 in wait["blacklist"]:
                         pass
@@ -1425,6 +1425,7 @@ def bot(op):
                         pass
                     else:
                         wait["blacklist"][op.param2] = True
+			
 #------------------------------------------------------------------
         if op.type == 13:
             if mid in op.param3:
@@ -2065,7 +2066,7 @@ def bot(op):
                                 print error
                                 cl.sendText(msg.to,"Upload image failed.")
 
-            elif "บัญชีดำ " in msg.text:
+            elif "ดำ " in msg.text:
                 if msg.from_ in admin:
                     key = eval(msg.contentMetadata["MENTION"])
                     key["MENTIONEES"][0]["M"]
@@ -2077,13 +2078,13 @@ def bot(op):
                             wait["blacklist"][target] = True
                             f=codecs.open('st2__b.json','w','utf-8')
                             json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
-                            cl.sendText(msg.to,"Done Banned")
+                            cl.sendText(msg.to,"💀 [Blacklist] 💀")
                             print "[Command] Bannad"
                         except:
                             pass
 #----------------------------------------------------------------------------
 #------------------------------- UNBAN BY TAG -------------------------------
-            elif "Wl " in msg.text:
+            elif "Cb " in msg.text:
                 if msg.from_ in admin:
                     key = eval(msg.contentMetadata["MENTION"])
                     key["MENTIONEES"][0]["M"]
@@ -2095,7 +2096,7 @@ def bot(op):
                             del wait["blacklist"][target]
                             f=codecs.open('st2__b.json','w','utf-8')
                             json.dump(wait["blacklist"], f, sort_keys=True, indent=4,ensure_ascii=False)
-                            cl.sendText(msg.to,"Done Unbanned")
+                            cl.sendText(msg.to,"Clear blacklist")
                             print "[Command] Unbannad"
                         except:
                             pass
@@ -2272,8 +2273,8 @@ def bot(op):
                 cl.sendText(msg.to,g)
 
 #==================================================
-            elif "#ชื่อบอท:" in msg.text:
-                string = msg.text.replace("#ชื่อบอท:","")
+            elif "ตั้งชื่อบอท:" in msg.text:
+                string = msg.text.replace("ตั้งชื่อบอท:","")
                 if len(string.decode('utf-8')) <= 20:
                     profile = ki.getProfile()
                     profile.displayName = string
@@ -2294,61 +2295,9 @@ def bot(op):
                     profile = ke.getProfile()
                     profile.displayName = string
                     ke.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 20:
-                    profile = kf.getProfile()
-                    profile.displayName = string
-                    kf.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 20:
-                    profile = kg.getProfile()
-                    profile.displayName = string
-                    kg.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 20:
-                    profile = kh.getProfile()
-                    profile.displayName = string
-                    kh.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 20:
-                    profile = kj.getProfile()
-                    profile.displayName = string
-                    kj.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 20:
-                    profile = kl.getProfile()
-                    profile.displayName = string
-                    kl.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 20:
-                    profile = km.getProfile()
-                    profile.displayName = string
-                    km.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 20:
-                    profile = kn.getProfile()
-                    profile.displayName = string
-                    kn.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 20:
-                    profile = ko.getProfile()
-                    profile.displayName = string
-                    ko.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 20:
-                    profile = kp.getProfile()
-                    profile.displayName = string
-                    kp.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 20:
-                    profile = kq.getProfile()
-                    profile.displayName = string
-                    kq.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 20:
-                    profile = kr.getProfile()
-                    profile.displayName = string
-                    kr.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 20:
-                    profile = ks.getProfile()
-                    profile.displayName = string
-                    ks.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 20:
-                    profile = kt.getProfile()
-                    profile.displayName = string
-                    kt.updateProfile(profile)
                     cl.sendText(msg.to,"nama berubah menjadi " + string + "")
-            elif "#ตัสบอท:" in msg.text:
-                string = msg.text.replace("#ตัสบอท:","")
+            elif "ตัสบอท:" in msg.text:
+                string = msg.text.replace("ตัสบอท:","")
                 if len(string.decode('utf-8')) <= 500:
                     profile = ki.getProfile()
                     profile.statusMessage = string
@@ -2369,60 +2318,8 @@ def bot(op):
                     profile = ke.getProfile()
                     profile.statusMessage = string
                     ke.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 500:
-                    profile = kf.getProfile()
-                    profile.statusMessage = string
-                    kf.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 500:
-                    profile = kg.getProfile()
-                    profile.statusMessage = string
-                    kg.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 500:
-                    profile = kh.getProfile()
-                    profile.statusMessage = string
-                    kh.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 500:
-                    profile = kj.getProfile()
-                    profile.statusMessage = string
-                    kj.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 500:
-                    profile = kl.getProfile()
-                    profile.statusMessage = string
-                    kl.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 500:
-                    profile = km.getProfile()
-                    profile.statusMessage = string
-                    km.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 500:
-                    profile = kn.getProfile()
-                    profile.statusMessage = string
-                    kn.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 500:
-                    profile = ko.getProfile()
-                    profile.statusMessage = string
-                    ko.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 500:
-                    profile = kp.getProfile()
-                    profile.statusMessage = string
-                    kp.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 500:
-                    profile = kq.getProfile()
-                    profile.statusMessage = string
-                    kq.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 500:
-                    profile = kr.getProfile()
-                    profile.statusMessage = string
-                    kr.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 500:
-                    profile = ks.getProfile()
-                    profile.statusMessage = string
-                    ks.updateProfile(profile)
-                if len(string.decode('utf-8')) <= 500:
-                    profile = kt.getProfile()
-                    profile.statusMessage = string
-                    kt.updateProfile(profile)
-            elif "#ชื่อตัวเอง:" in msg.text:
-                string = msg.text.replace("#ชื่อตัวเอง:","")
+            elif "ตั้งชื่อ:" in msg.text:
+                string = msg.text.replace("ตั้งชื่อ:","")
                 if len(string.decode('utf-8')) <= 20:
                     profile = cl.getProfile()
                     profile.displayName = string
@@ -2775,7 +2672,7 @@ http://line.me/ti/p/~security_botline
                         sinvitee = str(len(ginfo.invitee))
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': ginfo.creator.mid}
-                cl.sendText(msg.to,"[Group Name]\n" + str(ginfo.name) + "\n[Group Uid]\n" + msg.to + "\n\n[Group Creator]\n" + gCreator + "\n\nAnggota:" + str(len(ginfo.members)) + "\nInvitation:" + sinvitee + "")
+                cl.sendText(msg.to,"✰Group Name✰\n" + str(ginfo.name) + "\n✰Group Uid✰\n" + msg.to + "\n\n✰Group Creator✰\n" + gCreator + "\n\nGroup member: " + str(len(ginfo.members)) + "\nMembers invited: " + sinvitee + "\n •─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
                 cl.sendMessage(msg)
             elif msg.text in ["!Glist","Myginfo"]:
                 gs = cl.getGroupIdsJoined()
@@ -2832,34 +2729,34 @@ http://line.me/ti/p/~security_botline
                 cl.sendMessage(msg)
 
             elif "Helpbot" in msg.text:
-                cl.sendText(msg.to,"""•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\n
-            ❇️ Key Only BOT ❇️\n
-[Bot ?]\n
-[Mid bot]\n
-[Bcancel]\n
-[BotChat]\n
-[Respons]\n
-[Man1 - Man18]\n
-[ลบรันบอท1-18]\n
-[1Aditname: ]\n
-[M1-M18]  in\n
-[M1-M18]  bye\n
-[M1-M18]  gift\n
-[M1-M18]  rename: \n
-[Ban @]+[Kill-Kill ban]\n
-[Conban] + [คท. ดำ]\n
-[Cb] Clear blacklist\n
-[Nk  @] + [@]\n
-[M1 kick - M9 kick  @]\n\n
-  <😏_/\n
-    \
-     \
-   _/🍆\_
-www.หรรมใหญ่โว้ย.com （´・ω・｀）\n
-──────┅═ই۝ई═┅──────\n
-နับთิஏთั้ଏบਹທ  Sirichan V⒑\n
-สนใจติดต่อที่  ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ\n
-http://line.me/ti/p/~1ove..neverdie\n
+                cl.sendText(msg.to,"""•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•
+            ❇️ Key Only BOT ❇️
+[Bot ?]
+[My bot]
+[Namebot]
+[Mid bot]
+[Bcancel]
+[BotChat]
+[Respons]
+[Contact bot]
+[Man1 - Man5]
+[ลบรันบอท1-5]
+[1Aditname: ]
+[M1-M5]  in
+[M1-M5]  bye
+[M1-M5]  gift
+[M1-M5]  rename: 
+[Ban @]+[Kill-Kill ban]
+[Conban] + [คท. ดำ]
+[Cb] Clear blacklist
+[Nk  @] + [Fuck @]
+[M1 kick - M5 kick  @]
+ 
+ www.หรรมใหญ่โว้ย.com （´・ω・｀）
+──────┅═ই۝ई═┅──────
+နับთิஏთั้ଏบਹທ V⒑ (รับทำเชลบอทกันรัน)
+สนใจติดต่อที่  ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ
+http://line.me/ti/p/~1ove..neverdie
 ──────┅═ই۝ई═┅──────""")
 
             elif msg.text.lower() == 'cancel':
@@ -2929,19 +2826,6 @@ http://line.me/ti/p/~1ove..neverdie\n
                 kc.sendText(msg.to,"Bot 💀3💀 \n•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
                 kd.sendText(msg.to,"Bot 💀4💀 \n•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
                 ke.sendText(msg.to,"Bot 💀5💀 \n•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
-                kf.sendText(msg.to,"Bot 💀6💀 \n•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
-                kg.sendText(msg.to,"Bot 💀7💀 \n•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
-                kh.sendText(msg.to,"Bot 💀8💀 \n•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
-                kj.sendText(msg.to,"Bot 💀9💀 \n•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
-                kl.sendText(msg.to,"Bot 💀10💀 \n•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
-                km.sendText(msg.to,"Bot 💀11💀 \n•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
-                kn.sendText(msg.to,"Bot 💀12💀 \n•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
-                ko.sendText(msg.to,"Bot 💀13💀 \n•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
-                kp.sendText(msg.to,"Bot 💀14💀 \n•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
-                kq.sendText(msg.to,"Bot 💀15💀 \n•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
-                kr.sendText(msg.to,"Bot 💀16💀 \n•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
-                ks.sendText(msg.to,"Bot 💀17💀 \n•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
-                kt.sendText(msg.to,"Bot 💀18💀 \n•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•")
             elif "Man say " in msg.text:
                                 bctxt = msg.text.replace("Man say ","")
                                 ki.sendText(msg.to,(bctxt))
@@ -3077,97 +2961,6 @@ http://line.me/ti/p/~1ove..neverdie\n
                     profile_B.displayName = string
                     ke.updateProfile(profile_B)
                     ke.sendText(msg.to,"Name " + string + " Updated Name")
-            elif "M6 rename: " in msg.text:
-                string = msg.text.replace("M6 rename: ","")
-                if len(string.decode('utf-8')) <= 20:
-                    profile_B = kf.getProfile()
-                    profile_B.displayName = string
-                    kf.updateProfile(profile_B)
-                    kf.sendText(msg.to,"Name " + string + " Updated Name")
-            elif "M7 rename: " in msg.text:
-                string = msg.text.replace("M7 rename: ","")
-                if len(string.decode('utf-8')) <= 20:
-                    profile_B = kg.getProfile()
-                    profile_B.displayName = string
-                    kg.updateProfile(profile_B)
-                    kg.sendText(msg.to,"Name " + string + " Updated Name")
-            elif "M8 rename: " in msg.text:
-                string = msg.text.replace("M8 rename: ","")
-                if len(string.decode('utf-8')) <= 20:
-                    profile_B = kh.getProfile()
-                    profile_B.displayName = string
-                    kh.updateProfile(profile_B)
-                    kh.sendText(msg.to,"Name " + string + " Updated Name")
-            elif "M9 rename: " in msg.text:
-                string = msg.text.replace("M9 rename: ","")
-                if len(string.decode('utf-8')) <= 20:
-                    profile_B = kj.getProfile()
-                    profile_B.displayName = string
-                    kj.updateProfile(profile_B)
-                    kj.sendText(msg.to,"Name " + string + " Updated Name")
-            elif "M10 rename: " in msg.text:
-                string = msg.text.replace("M10 rename: ","")
-                if len(string.decode('utf-8')) <= 20:
-                    profile_B = kl.getProfile()
-                    profile_B.displayName = string
-                    kl.updateProfile(profile_B)
-                    kl.sendText(msg.to,"Name " + string + " Updated Name")
-            elif "M11 rename: " in msg.text:
-                string = msg.text.replace("M11 rename: ","")
-                if len(string.decode('utf-8')) <= 20:
-                    profile_B = km.getProfile()
-                    profile_B.displayName = string
-                    km.updateProfile(profile_B)
-                    km.sendText(msg.to,"Name " + string + " Updated Name")
-            elif "M12 rename: " in msg.text:
-                string = msg.text.replace("M12 rename: ","")
-                if len(string.decode('utf-8')) <= 20:
-                    profile_B = kn.getProfile()
-                    profile_B.displayName = string
-                    kn.updateProfile(profile_B)
-                    kn.sendText(msg.to,"Name " + string + " Updated Name")
-            elif "M13 rename: " in msg.text:
-                string = msg.text.replace("M13 rename: ","")
-                if len(string.decode('utf-8')) <= 20:
-                    profile_B = ko.getProfile()
-                    profile_B.displayName = string
-                    ko.updateProfile(profile_B)
-                    ko.sendText(msg.to,"Name " + string + " Updated Name")
-            elif "M14 rename: " in msg.text:
-                string = msg.text.replace("M14 rename: ","")
-                if len(string.decode('utf-8')) <= 20:
-                    profile_B = kp.getProfile()
-                    profile_B.displayName = string
-                    kp.updateProfile(profile_B)
-                    kp.sendText(msg.to,"Name " + string + " Updated Name")
-            elif "M15 rename: " in msg.text:
-                string = msg.text.replace("M15 rename: ","")
-                if len(string.decode('utf-8')) <= 20:
-                    profile_B = kq.getProfile()
-                    profile_B.displayName = string
-                    kq.updateProfile(profile_B)
-                    kq.sendText(msg.to,"Name " + string + " Updated Name")
-            elif "M16 rename: " in msg.text:
-                string = msg.text.replace("M16 rename: ","")
-                if len(string.decode('utf-8')) <= 20:
-                    profile_B = kr.getProfile()
-                    profile_B.displayName = string
-                    kr.updateProfile(profile_B)
-                    kr.sendText(msg.to,"Name " + string + " Updated Name")
-            elif "M17 rename: " in msg.text:
-                string = msg.text.replace("M17 rename: ","")
-                if len(string.decode('utf-8')) <= 20:
-                    profile_B = ks.getProfile()
-                    profile_B.displayName = string
-                    ks.updateProfile(profile_B)
-                    ks.sendText(msg.to,"Name " + string + " Updated Name")
-            elif "M18 rename: " in msg.text:
-                string = msg.text.replace("M18 rename: ","")
-                if len(string.decode('utf-8')) <= 20:
-                    profile_B = kt.getProfile()
-                    profile_B.displayName = string
-                    kt.updateProfile(profile_B)
-                    kt.sendText(msg.to,"Name " + string + " Updated Name")
             elif "Mc " in msg.text:
                 key = eval(msg.contentMetadata["MENTION"])
                 key1 = key["MENTIONEES"][0]["M"]
