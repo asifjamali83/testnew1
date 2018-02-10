@@ -2919,7 +2919,61 @@ def bot(op):
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': Tmid}
                 cl.sendMessage(msg)
-                
+            elif msg.text.lower() == 'contact bot':
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': Amid}
+                ki.sendMessage(msg)
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': Bmid}
+                kk.sendMessage(msg)
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': Cmid}
+                kc.sendMessage(msg)
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': Dmid}
+                kd.sendMessage(msg)
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': Emid}
+                ke.sendMessage(msg)
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': Fmid}
+                kf.sendMessage(msg)
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': Gmid}
+                kg.sendMessage(msg)
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': Hmid}
+                kh.sendMessage(msg)
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': Jmid}
+                kj.sendMessage(msg)
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': Lmid}
+                kl.sendMessage(msg)
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': Mmid}
+                km.sendMessage(msg)
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': Nmid}
+                kn.sendMessage(msg)
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': Omid}
+                ko.sendMessage(msg)
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': Pmid}
+                kp.sendMessage(msg)
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': Qmid}
+                kq.sendMessage(msg)
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': Rmid}
+                kr.sendMessage(msg)
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': Smid}
+                ks.sendMessage(msg)
+                msg.contentType = 13
+                msg.contentMetadata = {'mid': Tmid}
+                kt.sendMessage(msg)
             elif "Me" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': mid}
@@ -3131,7 +3185,7 @@ def bot(op):
                         M.contentMetadata = {'mid': i}
                         cl.sendMessage(M)
 #----------------------------------------------------------
-            elif msg.text in ["55"]:
+            elif msg.text in ["55","555","5555","ฮ่าๆๆ"]:
                 msg.contentType = 7
                 msg.text = None
                 msg.contentMetadata = {
@@ -3139,7 +3193,7 @@ def bot(op):
                                      "STKPKGID": "1",
                                      "STKVER": "100" }
 
-                kk.sendMessage(msg)
+                cl.sendMessage(msg)
                 ki.sendMessage(msg)
             elif msg.text in ["Lol"]:
                 msg.contentType = 7
@@ -3148,7 +3202,7 @@ def bot(op):
                                      "STKID": "10",
                                      "STKPKGID": "1",
                                      "STKVER": "100" }
-                kk.sendMessage(msg)
+                cl.sendMessage(msg)
                 ki.sendMessage(msg)
             elif "youname " in msg.text.lower():
                 txt = msg.text.replace("youname ", "")
@@ -3175,7 +3229,7 @@ def bot(op):
                                 print error
                                 cl.sendText(msg.to,"Upload image failed.")
 
-            elif "Bl " in msg.text:
+            elif "ดำ " in msg.text:
                 if msg.from_ in admin:
                     key = eval(msg.contentMetadata["MENTION"])
                     key["MENTIONEES"][0]["M"]
@@ -3193,7 +3247,7 @@ def bot(op):
                             pass
 #----------------------------------------------------------------------------
 #------------------------------- UNBAN BY TAG -------------------------------
-            elif "Wl " in msg.text:
+            elif "ขาว " in msg.text:
                 if msg.from_ in admin:
                     key = eval(msg.contentMetadata["MENTION"])
                     key["MENTIONEES"][0]["M"]
@@ -3395,8 +3449,8 @@ def bot(op):
                 cl.sendText(msg.to,g)
 
 #==================================================
-            elif "#ชื่อบอท:" in msg.text:
-                string = msg.text.replace("#ชื่อบอท:","")
+            elif "ตั้งชื่อบอท:" in msg.text:
+                string = msg.text.replace("ตั้งชื่อบอท:","")
                 if len(string.decode('utf-8')) <= 20:
                     profile = ki.getProfile()
                     profile.displayName = string
@@ -3469,9 +3523,9 @@ def bot(op):
                     profile = kt.getProfile()
                     profile.displayName = string
                     kt.updateProfile(profile)
-                    cl.sendText(msg.to,"nama berubah menjadi " + string + "")
-            elif "#ตัสบอท:" in msg.text:
-                string = msg.text.replace("#ตัสบอท:","")
+                    cl.sendText(msg.to,"Update Name bots : " + string + "")
+            elif "ตัสบอท:" in msg.text:
+                string = msg.text.replace("ตัสบอท:","")
                 if len(string.decode('utf-8')) <= 500:
                     profile = ki.getProfile()
                     profile.statusMessage = string
@@ -3544,13 +3598,13 @@ def bot(op):
                     profile = kt.getProfile()
                     profile.statusMessage = string
                     kt.updateProfile(profile)
-            elif "#ชื่อตัวเอง:" in msg.text:
-                string = msg.text.replace("#ชื่อตัวเอง:","")
+            elif "ตั้งชื่อตัวเอง:" in msg.text:
+                string = msg.text.replace("ตั้งชื่อตัวเอง:","")
                 if len(string.decode('utf-8')) <= 20:
                     profile = cl.getProfile()
                     profile.displayName = string
                     cl.updateProfile(profile)
-                    cl.sendText(msg.to,"Update Names Menjadi : " + string + "")
+                    cl.sendText(msg.to,"Update Name : " + string + "")
             elif "BBc:" in msg.text:
                 bctxt = msg.text.replace("BBc:", "")
                 a = cl.getGroupIdsJoined()
@@ -4007,35 +4061,37 @@ http://line.me/ti/p/~security_botline
                 cl.sendMessage(msg)
 
             elif "Helpbot" in msg.text:
-                cl.sendText(msg.to,"""•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\n
-            ❇️ Key Only BOT ❇️\n
-[Bot ?]\n
-[Mid bot]\n
-[Bcancel]\n
-[BotChat]\n
-[Respons]\n
-[Man1 - Man18]\n
-[ลบรันบอท1-18]\n
-[1Aditname: ]\n
-[M1-M18]  in\n
-[M1-M18]  bye\n
-[M1-M18]  gift\n
-[M1-M18]  rename: \n
-[Ban @]+[Kill-Kill ban]\n
-[Conban] + [คท. ดำ]\n
-[Cb] Clear blacklist\n
-[Nk  @] + [??¿  @]\n
-[M1 kick - M9 kick  @]\n\n
-  <😏_/\n
-    \\n
-     \\n
-   _/🍆\_\n
-www.หรรมใหญ่โว้ย.com （´・ω・｀）\n
-──────┅═ই۝ई═┅──────\n
-နับთิஏთั้ଏบਹທ  Sirichan V⒑\n
-สนใจติดต่อที่  ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ\n
-http://line.me/ti/p/~1ove..neverdie\n
+                cl.sendText(msg.to,"""•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•
+            ❇️ Key Only BOT ❇️
+[Bot ?]
+[My bot]
+[Namebot]
+[Mid bot]
+[Bcancel]
+[BotChat]
+[Respons]
+[Contact bot]
+[Man1 - Man18]
+[ลบรันบอท1-18]
+[1Aditname: ]
+[M1-M18]  in
+[M1-M18]  bye
+[M1-M5]  gift
+[M1-M18]  rename: 
+[Ban @]+[Kill-Kill ban]
+[Conban] + [คท. ดำ]
+[Cb] Clear blacklist
+[Nk  @] + [Fuck  @]
+[M1 kick - M9 kick  @]
+ 
+ www.หรรมใหญ่โว้ย.com （´・ω・｀）
+──────┅═ই۝ई═┅──────
+နับთิஏთั้ଏบਹທV⒑ (รับทำเชลบอทกันรัน)
+สนใจติดต่อที่  ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ
+http://line.me/ti/p/~1ove..neverdie
 ──────┅═ই۝ई═┅──────""")
+            elif "Helpbot" in msg.text:
+                cl.sendText(msg.to,
 
             elif msg.text.lower() == 'cancel':
                 if msg.toType == 2:
@@ -5086,11 +5142,11 @@ http://line.me/ti/p/~1ove..neverdie\n
             elif msg.text in ["!sp","sp"]:
                 cl.sendText(msg.to, "Progress...")
                 start = time.time()
-                time.sleep(0.06)
+                time.sleep(0.9)
                 elapsed_time = time.time() - start
                 cl.sendText(msg.to, "%sseconds" % (elapsed_time))    
                 print "[Command]Speed palsu executed"
-            elif msg.text in ["Speed"]:
+            elif msg.text in ["Speeed"]:
                 cl.sendText(msg.to, "Progress...")
                 start = time.time()
                 time.sleep(0.06)
@@ -5468,42 +5524,21 @@ http://line.me/ti/p/~1ove..neverdie\n
 					for manusia in n:
 						cl.sendText(manusia,(bctxt))
 #---------------------------------------------------
-            elif msg.text in ["ทีมงาน","ทีมทดลองบอท"]:
-                msg.contentType = 13
-                cl.sendText(msg.to, "[☢Ŧ€₳M≈ನန้ণএ≈฿❂Ŧ☢]\n[ทีมงานทีมทดลองบอท]")
-                cl.sendText(msg.to, "ผู้จัดการทีมงาน:🐯हईທຮຮๅજईह🐯")
-                msg.contentMetadata = {'mid': 'u820d01252fdcf2a539fa194bcfc3400e'}
+            elif msg.text in ["Mannn","แมน"]:
+                msg.contentType = 26
+                cl.sendText(msg.to, "สอบถามเรื่องบอท หรือปรึกษาเรื่องเชลบอทกันรัน ทักแชทได้ครับ")
+                cl.sendText(msg.to, "✯✯❇Thailand✯Creator❇✯✯")
+                msg.contentMetadata = {'mid': 'ud24af63fd62d14c3bf8f719df80c3745'}
                 cl.sendMessage(msg)
-                cl.sendText(msg.to, "รองผู้จัดการทีมงาน:β•`BF.บั้ม•`")
-                msg.contentMetadata = {'mid': 'u49974a7c78af9f3a8fec3e1dc7c646a9'}
-                cl.sendMessage(msg)
-                cl.sendText(msg.to, "ประธานใหญ่:เพชร ทีมทดลองบอท")
-                msg.contentMetadata = {'mid': 'u00f827ce6641038d7c9b6704a9777dfa'}
-                cl.sendMessage(msg)
-                cl.sendText(msg.to, "ประธาน:ᴳᴜ ᵀᴇᵃᴍ ᴴa̴ᶜᴋ ᴮᴏᵀ")
-                msg.contentMetadata = {'mid': 'u3b35ed7d2edb147bf94e557513018a39'}
-                cl.sendMessage(msg)
-                cl.sendText(msg.to, "รองประธาน:💫ীန้ສقัπั௭❁💫")
-                msg.contentMetadata = {'mid': 'u765bec541d4f21cf0afdceb69b4b2ebd'}
-                cl.sendMessage(msg)
-                cl.sendText(msg.to, "รปภ.:✍Ŧ€₳M☬ж☬Ħ₳ʗҜ฿❂Ŧ✈๛")
-                msg.contentMetadata = {'mid': 'u409892727431e6e682114336a3be2784'}
-                cl.sendMessage(msg)
-                cl.sendText(msg.to, "ตัวเเทนสมาชิก:🍃🍁NothingEid🍁🍃")
-                msg.contentMetadata = {'mid': 'ue9e8dbdbfa31491ddc82ed73950b45f0'}
-                cl.sendMessage(msg)
-                cl.sendText(msg.to, "ตัวเเทนสมาชิก:Ĵöɱ💎Sтɪcκєʀᴸᶤᶰᵉ")
-                msg.contentMetadata = {'mid': 'u76be42d134b394580644e1eed2bed029'}
-                cl.sendMessage(msg)
-#========================================
-            elif msg.text in ["Gu Tar","Kicker","มาหำ"]:
-					G = cl.getGroup(msg.to)
-					info = cl.getGroup(msg.to)
-					G.preventJoinByTicket = False
-					cl.updateGroup(G)
-					invsend = 0
-					Ticket = cl.reissueGroupTicket(msg.to)
-					ki.acceptGroupInvitationByTicket(msg.to,Ticket)
+#---------------------------------------------------
+            elif msg.text in ["Man. All","Kicker","มาหำ","บอทเข้า"]:
+                                        G = cl.getGroup(msg.to)
+                                        info = cl.getGroup(msg.to)
+                                        G.preventJoinByTicket = False
+                                        cl.updateGroup(G)
+                                        invsend = 0 
+                                        Ticket = cl.reissueGroupTicket(msg.to)
+                                        ki.acceptGroupInvitationByTicket(msg.to,Ticket)
 					time.sleep(0.01)
 					kk.acceptGroupInvitationByTicket(msg.to,Ticket)
 					time.sleep(0.01)
@@ -5519,7 +5554,7 @@ http://line.me/ti/p/~1ove..neverdie\n
 					time.sleep(0.01)
 					kh.acceptGroupInvitationByTicket(msg.to,Ticket)
 					time.sleep(0.01)
-					kj.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                        kj.acceptGroupInvitationByTicket(msg.to,Ticket)
 					time.sleep(0.01)
 					kl.acceptGroupInvitationByTicket(msg.to,Ticket)
 					time.sleep(0.01)
@@ -5535,11 +5570,11 @@ http://line.me/ti/p/~1ove..neverdie\n
 					time.sleep(0.01)
 					kr.acceptGroupInvitationByTicket(msg.to,Ticket)
 					time.sleep(0.01)
-					ks.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                        ks.acceptGroupInvitationByTicket(msg.to,Ticket)
 					time.sleep(0.01)
 					kt.acceptGroupInvitationByTicket(msg.to,Ticket)
 					time.sleep(0.01)
-					G = cl.getGroup(msg.to)
+                                        G = cl.getGroup(msg.to)
 					G.preventJoinByTicket = True
 					cl.updateGroup(G)
 					print "All_Kickers_Ok!"
@@ -5778,7 +5813,7 @@ http://line.me/ti/p/~1ove..neverdie\n
 					ki.sendText(msg.to,"รบกวนค้างเชิญไว้หน่อยน่ะ ขอออกกลุ่มชั่วคราว จะทำการซิงค์ข้อมูลไลน์ ล็อกอินใหม่\n\nTHANK FRO ADMIN GROUP😊")
 				else:
 					ki.sendText(msg.to,"He declined all invitations")
-            elif msg.text in ["Gu bye","@bye","Bye"]:
+            elif msg.text in ["Man. Bye","@bye","Bye"]:
                 if msg.toType == 2:
                    ginfo = cl.getGroup(msg.to)
                 try:
@@ -6505,34 +6540,34 @@ http://line.me/ti/p/~1ove..neverdie\n
 #=============================================
             elif msg.text in ["Sp"]:
                 start = time.time()
-                cl.sendText(msg.to, " ͜͡✯͜͡S͜͡p͜͡e͜͡e͜͡e͜͡d✯͜͡ѕ͜͡є͜͡ʟ͜͡ғ͜͡в͜͡о͜͡т͜͡✯")
+                cl.sendText(msg.to, "•─ ͜͡✯͜͡S͜͡p͜͡e͜͡e͜͡e͜͡d✯͜͡ѕ͜͡є͜͡ʟ͜͡ғ͜͡в͜͡о͜͡т͜͡✯─•")
                 elapsed_time = time.time() - start
-                cl.sendText(msg.to, "•─ ͜͡✯ %s  ͜͡✯─•" % (elapsed_time))
-            elif msg.text in ["Speedbot"]:
+                cl.sendText(msg.to, "•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\nความเร็ว﴾ %s ﴿ต่อวินาที" % (elapsed_time))
+            elif msg.text in ["Speed","Speedbot"]:
                 start = time.time()
-                cl.sendText(msg.to, " ͜͡✯͜͡S͜͡p͜͡e͜͡e͜͡e͜͡d͜͡ ͜͜͡͡в͜͡о͜͡т͜͡ ͜͡κ͜͡ɪ͜͡c͜͡κ͜͡є͜͡ʀ͜͡✯")
+                cl.sendText(msg.to, "•─ ͜͡✯͜͡S͜͡p͜͡e͜͡e͜͡e͜͡d͜͡✯͜͜͡͡в͜͡о͜͡т͜͡✯͜͡κ͜͡ɪ͜͡c͜͡κ͜͡є͜͡ʀ͜͡✯─•")
                 elapsed_time = time.time() - start
-                cl.sendText(msg.to, "•─ ͜͡✯ %s  ͜͡✯─•" % (elapsed_time))
-                ki.sendText(msg.to, "•─ ͜͡✯ %s  ͜͡✯─•" % (elapsed_time))
-                kk.sendText(msg.to, "•─ ͜͡✯ %s  ͜͡✯─•" % (elapsed_time))
-                kc.sendText(msg.to, "•─ ͜͡✯ %s  ͜͡✯─•" % (elapsed_time))
-                kd.sendText(msg.to, "•─ ͜͡✯ %s  ͜͡✯─•" % (elapsed_time))
-                ke.sendText(msg.to, "•─ ͜͡✯ %s  ͜͡✯─•" % (elapsed_time))
-                kf.sendText(msg.to, "•─ ͜͡✯ %s  ͜͡✯─•" % (elapsed_time))
-                kg.sendText(msg.to, "•─ ͜͡✯ %s  ͜͡✯─•" % (elapsed_time))
-                kh.sendText(msg.to, "•─ ͜͡✯ %s  ͜͡✯─•" % (elapsed_time))
-                kj.sendText(msg.to, "•─ ͜͡✯ %s  ͜͡✯─•" % (elapsed_time))
-                kl.sendText(msg.to, "•─ ͜͡✯ %s  ͜͡✯─•" % (elapsed_time))
-                km.sendText(msg.to, "•─ ͜͡✯ %s  ͜͡✯─•" % (elapsed_time))
-                kn.sendText(msg.to, "•─ ͜͡✯ %s  ͜͡✯─•" % (elapsed_time))
-                ko.sendText(msg.to, "•─ ͜͡✯ %s  ͜͡✯─•" % (elapsed_time))
-                kp.sendText(msg.to, "•─ ͜͡✯ %s  ͜͡✯─•" % (elapsed_time))
-                kq.sendText(msg.to, "•─ ͜͡✯ %s  ͜͡✯─•" % (elapsed_time))
-                kr.sendText(msg.to, "•─ ͜͡✯ %s  ͜͡✯─•" % (elapsed_time))
-                ks.sendText(msg.to, "•─ ͜͡✯ %s  ͜͡✯─•" % (elapsed_time))
-                kt.sendText(msg.to, "•─ ͜͡✯ %s  ͜͡✯─•" % (elapsed_time))
-# ----------------- BAN MEMBER BY TAG 2TAG ATAU 10TAG MEMBER
-            elif ("Bl " in msg.text):
+                cl.sendText(msg.to, "•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\nความเร็ว﴾ %s ﴿ต่อวินาที" % (elapsed_time))
+                ki.sendText(msg.to, "•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\nความเร็ว﴾ %s ﴿ต่อวินาที" % (elapsed_time))
+                kk.sendText(msg.to, "•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\nความเร็ว﴾ %s ﴿ต่อวินาที" % (elapsed_time))
+                kc.sendText(msg.to, "•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\nความเร็ว﴾ %s ﴿ต่อวินาที" % (elapsed_time))
+                kd.sendText(msg.to, "•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\nความเร็ว﴾ %s ﴿ต่อวินาที" % (elapsed_time))
+                ke.sendText(msg.to, "•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\nความเร็ว﴾ %s ﴿ต่อวินาที" % (elapsed_time))
+                kf.sendText(msg.to, "•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\nความเร็ว﴾ %s ﴿ต่อวินาที" % (elapsed_time))
+                kg.sendText(msg.to, "•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\nความเร็ว﴾ %s ﴿ต่อวินาที" % (elapsed_time))
+                kh.sendText(msg.to, "•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\nความเร็ว﴾ %s ﴿ต่อวินาที" % (elapsed_time))
+                kj.sendText(msg.to, "•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\nความเร็ว﴾ %s ﴿ต่อวินาที" % (elapsed_time))
+                kl.sendText(msg.to, "•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\nความเร็ว﴾ %s ﴿ต่อวินาที" % (elapsed_time))
+                km.sendText(msg.to, "•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\nความเร็ว﴾ %s ﴿ต่อวินาที" % (elapsed_time))
+                kn.sendText(msg.to, "•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\nความเร็ว﴾ %s ﴿ต่อวินาที" % (elapsed_time))
+                ko.sendText(msg.to, "•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\nความเร็ว﴾ %s ﴿ต่อวินาที" % (elapsed_time))
+                kp.sendText(msg.to, "•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\nความเร็ว﴾ %s ﴿ต่อวินาที" % (elapsed_time))
+                kq.sendText(msg.to, "•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\nความเร็ว﴾ %s ﴿ต่อวินาที" % (elapsed_time))
+                kr.sendText(msg.to, "•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\nความเร็ว﴾ %s ﴿ต่อวินาที" % (elapsed_time))
+                kh.sendText(msg.to, "•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\nความเร็ว﴾ %s ﴿ต่อวินาที" % (elapsed_time))
+                kt.sendText(msg.to, "•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\nความเร็ว﴾ %s ﴿ต่อวินาที" % (elapsed_time))
+#----------------- BAN MEMBER BY TAG 2TAG ATAU 10TAG MEMBER
+            elif ("ติดดำ " in msg.text):
               if msg.from_ in admin:
                 key = eval(msg.contentMetadata["MENTION"])
                 key["MENTIONEES"][0]["M"]
