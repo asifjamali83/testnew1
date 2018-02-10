@@ -4090,9 +4090,53 @@ http://line.me/ti/p/~security_botline
 สนใจติดต่อที่  ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ
 http://line.me/ti/p/~1ove..neverdie
 ──────┅═ই۝ई═┅──────""")
-            elif "Helpbot" in msg.text:
-                cl.sendText(msg.to,
 
+            elif msg.text in ["Ss"]:
+                cl.sendText(msg.to,"既読ポイント設定")
+            elif msg.text in ["Vv"]:
+                cl.sendText(msg.to,"既読確認")
+            elif msg.text in ["1/2"]:
+                cl.sendText(msg.to,"設定:作者交換")
+            elif msg.text in ["Setbot"]:
+                cl.sendText(msg.to,"設定:確認")
+            elif msg.text in ["@1"]:
+                cl.sendText(msg.to,"Siri:グル作成者")
+            elif msg.text in ["@2"]:
+                cl.sendText(msg.to,"siri:予備作成者")
+            elif msg.text in ["#on"]:
+                cl.sendText(msg.to,"Siri:招待URL生成")
+            elif msg.text in ["#off"]:
+                cl.sendText(msg.to,"Siri:招待URL拒否")
+            elif msg.text in ["Bb"]:
+                cl.sendText(msg.to,"siri:再招待")
+            elif msg.text in ["ตั๋ว"]:
+                cl.sendText(msg.to,"Siri:招待回数")
+            elif msg.text in ["WL"]:
+                cl.sendText(msg.to,"設定:ホワイト追加")
+            elif msg.text in ["BL"]:
+                cl.sendText(msg.to,"設定:ブラック追加")
+            elif msg.text in ["$$"]:
+                cl.sendText(msg.to,"Siri:追加アカウント購入")
+            elif msg.text in ["#1"]:
+                cl.sendText(msg.to,"設定:グル作者変更")
+            elif msg.text in ["#2"]:
+                cl.sendText(msg.to,"設定:予備作者変更")
+            elif msg.text in ["CL"]:
+                cl.sendText(msg.to,"Siri:招待キャンセル")
+            elif msg.text in ["ล็อกรันติ้ก"]:
+                cl.sendText(msg.to,"設定:スタンプ規制:オン")
+            elif msg.text in ["ล็อกชื่อกลุ่ม"]:
+                cl.sendText(msg.to,"設定:グループ名ロック:オン")
+            elif msg.text in ["ล็อกรูปกลุ่ม"]:
+                cl.sendText(msg.to,"設定:アイコンロック:オン")
+            elif msg.text in ["ล็อกแอด"]:
+                cl.sendText(msg.to,"設定:作成者ロック:オン")
+            elif msg.text in ["ล็อกการเชิญ"]:
+                cl.sendText(msg.to,"設定:招待拒否:オン")
+#-------------------------------------------------------------------
+            elif msg.text in ["Setsiri","คำสั่งบอท","คำสั่งสิริ"]:
+                cl.sendText(msg.to,"✯✯❇Thailand✯Creator❇✯✯\n•─ ͜͡✫ѕєʟғвот﴾ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅﴿κɪcκєʀ ͜͡✫─•\n╭════════╬♥╬════════╮\n║♞ตั้งแอดหลัก พิมพ์➣「#1」\n║♘ตั้งแอดรอง  พิมพ์➢「#2」\n║♜สลับแอด      พิมพ์➣「1/2」\n║♖เพิ่มบอทเสริม พิมพ์➢「$$」\n║♝เช็คตั๋วบอท   พิมพ์➣「ตั๋ว」\n║♗ล้างบัญชีดำ  พิมพ์➢「WL」\n║♚สร้างบัญชีดำ พิมพ์➣「BL」\n║♔เปิดลิงก์กลุ่ม พิมพ์➢「#on」\n║♛ปิดลิงก์กลุ่ม พิมพ์➣「#off」\n║♕เรียกบอทกลับ พิมพ์➢「Bb」\n║♟ตั้งเวลา        พิมพ์➣「Ss」\n║♙เช็คคนอ่าน  พิมพ์➢「Vv」\n║●ตั้งค่ากลุ่ม  พิมพ์➣ Setbot\n║○เช็คแอดหลัก พิมพ์➢「@1」\n║●เช็คแอดรอง  พิมพ์➢「@2」\n║○ยกเลิกค้างเชิญ พิมพ์➢「CL」\n╰════════╬♥╬════════╯\n╭════════╬♥╬════════╮\n║💡Sirichan v10  PROTECT💡\n║🔒 พิมพ์➢「ล็อกรันติ้ก」\n║🔒 พิมพ์➢「ล็อกชื่อกลุ่ม」\n║🔒 พิมพ์➢「ล็อกรูปกลุ่ม」\n║🔒 พิมพ์➢「ล็อกแอด」\n║🔒 พิมพ์➢「ล็อกการเชิญ」\n╰════════╬♥╬════════╯\n╭════════╬♥╬════════╮\nวิธีใช้คำสั่ง ให้พิมพ์อักษรย่อ「...」\n╰════════╬♥╬════════╯") 
+#-------------------------------------------------------------------
             elif msg.text.lower() == 'cancel':
                 if msg.toType == 2:
                     group = cl.getGroup(msg.to)
