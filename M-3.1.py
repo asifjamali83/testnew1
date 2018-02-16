@@ -21,14 +21,6 @@ kc = LINETCR.LINE()
 kc.login(token="...")
 kc.loginResult()
 
-kd = LINETCR.LINE()
-kd.login(token="...")
-kd.loginResult()
-
-ke = LINETCR.LINE()
-ke.login(token="...")
-ke.loginResult()
-
 cl
 
 print "login success"
@@ -75,8 +67,6 @@ http://line.me/ti/p/~1ove..neverdie
 ❂͜͡☆➣ Reject1 📡 ลบรันบอท1
 ❂͜͡☆➣ Reject2 📡 ลบรันบอท2
 ❂͜͡☆➣ Reject3 📡 ลบรันบอท3
-❂͜͡☆➣ Reject4 📡 ลบรันบอท4
-❂͜͡☆➣ Reject5 📡 ลบรันบอท5
 ❂͜͡☆➣ ลบแชท  ☜☞  ล้างแชท
 ❂͜͡☆➣ ลบแชทบอท ☜☞ ล้างแชทบอท
 [C̶̲̅ᴏ̶̲̅ᴍ̶̲̅ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅ᴅ̶̲̅ ̶̲̅ɪ̶̲̅ɴ̶̲̅ ̶̲̅G̶̲̅ʀ̶̲̅ᴏ̶̲̅ᴜ̶̲̅ᴘ̶̲̅] 
@@ -220,8 +210,6 @@ mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
-Dmid = kd.getProfile().mid
-Emid = ke.getProfile().mid
 protectname = []
 protecturl = []
 protection = []
@@ -229,8 +217,8 @@ autocancel = {}
 autoinvite = []
 autoleaveroom = []
 targets = []
-Bots = ["ud24af63fd62d14c3bf8f719df80c3745",mid,Amid,Bmid,Cmid,Dmid,Emid]
-self = ["ud24af63fd62d14c3bf8f719df80c3745",mid,Amid,Bmid,Cmid,Dmid,Emid]
+Bots = ["ud24af63fd62d14c3bf8f719df80c3745",mid,Amid,Bmid,Cmid]
+self = ["ud24af63fd62d14c3bf8f719df80c3745",mid,Amid,Bmid,Cmid]
 admin = "ud24af63fd62d14c3bf8f719df80c3745"
 owner = "ud24af63fd62d14c3bf8f719df80c3745"
 admsa = "ud24af63fd62d14c3bf8f719df80c3745"
@@ -346,16 +334,6 @@ Viewlastseen    เช็คอ่าน
 
     ✫☆✰สนใจทักมาสอบถาม✰☆✫
 🔽🔻🔽🔻🔽🔻🔽🔻🔽🔻🔽🔻🔽
-http://line.me/ti/p/~security_botline
-🔈🔉🔊ท่านที่เพิ่มเพื่อนเด้งแชทด้วยคับ
-หากไม่ถูกใจบริการ ไม่ซื้อไม่เป็นไร
-ยินดีให้คำแนะนำ พร้อมให้ทดลองบอท
-อีกหนึ่งช่องทาง *ติดต่อเพิ่มเติมได้..↲
-📲0639375811ติดต่อเรื่องงานเท่านั้น
-✅รับเขียนบอทโต้ตอบ ✰Bot API✰
-✅รับสร้างไลน์ส่วนตัว LINE ProGram
-      แฮ๊กธีมไลน์ฟรีทุกธีม สนใจทัก
-     ️📛ย้ำ แอดเพื่อน ควรเด้งแชท📛
 
 ──────┅═ই۝ई═┅──────
 รับทำเชลบอทกันรัน(บอทส่วนตัว)แท๊กได้ทั้งกลุ่ม
@@ -435,18 +413,7 @@ backup.displayName = contact.displayName
 backup.statusMessage = contact.statusMessage
 backup.pictureStatus = contact.pictureStatus
 
-contact = kd.getProfile()
-backup = kd.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
 contact = ke.getProfile()
-backup = ke.getProfile()
-backup.displayName = contact.displayName
-backup.statusMessage = contact.statusMessage
-backup.pictureStatus = contact.pictureStatus
-
 def cms(string, commands): #/XXX, >XXX, ;XXX, ^XXX, %XXX, $XXX...
     tex = ["+","@","/",">",";","^","%","$","＾","サテラ:","サテラ:","サテラ：","サテラ："]
     for texX in tex:
