@@ -205,7 +205,7 @@ http://line.me/ti/p/~1ove..neverdie
 ╚═════════════════════╝
 """
 
-KAC=[cl,ki,kk,kc,kd,ke]
+KAC=[cl,ki,kk,kc]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
