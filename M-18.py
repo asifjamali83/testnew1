@@ -2493,7 +2493,7 @@ def bot(op):
                 url = msg.contentMetadata("line://home/post?userMid="+mid+"&postId="+"new_post")
                 cl.like(url[25:58], url[66:], likeType=1001)
 		
-        if op.type == 26:
+        """if op.type == 26:
             msg = op.message
             if msg.to in settings["simiSimi"]:
                 if settings["simiSimi"][msg.to] == True:
@@ -2595,7 +2595,7 @@ def bot(op):
                 if msg.toType == 0:
                     cl.sendChatChecked(msg.from_,msg.id)                                             
                 else:
-                    cl.sendChatChecked(msg.to,msg.id)
+                    cl.sendChatChecked(msg.to,msg.id)"""
 #=================================================
         if op.type == 25:
             msg = op.message
