@@ -1,89 +1,91 @@
 # -*- coding: utf-8 -*-
+#=======STAP.1=======#
 import LINETCR
 from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,requests,urllib
 #import time,random,sys,json,codecs,threading,glob,re
+#=======STAP.2=======#
 
 cl = LINETCR.LINE()
-cl.login(token="...")
+cl.login(token="MAN")
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(token="...")
+ki.login(token="MAN")
 ki.loginResult()
 
 kk = LINETCR.LINE()
-kk.login(token="...")
+kk.login(token="MAN")
 kk.loginResult()
 
 kc = LINETCR.LINE()
-kc.login(token="...")
+kc.login(token="MAN")
 kc.loginResult()
 
 kd = LINETCR.LINE()
-kd.login(token="...")
+kd.login(token="MAN")
 kd.loginResult()
 
 ke = LINETCR.LINE()
-ke.login(token="...")
+ke.login(token="MAN")
 ke.loginResult()
 
 kf = LINETCR.LINE()
-kf.login(token="...")
+kf.login(token="MAN")
 kf.loginResult()
 
 kg = LINETCR.LINE()
-kg.login(token="...")
+kg.login(token="MAN")
 kg.loginResult()
 
 kh = LINETCR.LINE()
-kh.login(token="...")
+kh.login(token="MAN")
 kh.loginResult()
 
 kj = LINETCR.LINE()
-kj.login(token="...")
+kj.login(token="MAN")
 kj.loginResult()
 
 kl = LINETCR.LINE()
-kl.login(token="...")
+kl.login(token="MAN")
 kl.loginResult()
 
 km = LINETCR.LINE()
-km.login(token="...")
+km.login(token="MAN")
 km.loginResult()
 
 kn = LINETCR.LINE()
-kn.login(token="...")
+kn.login(token="MAN")
 kn.loginResult()
 
 ko = LINETCR.LINE()
-ko.login(token="...")
+ko.login(token="MAN")
 ko.loginResult()
 
 kp = LINETCR.LINE()
-kp.login(token="...")
+kp.login(token="MAN")
 kp.loginResult()
 
 kq = LINETCR.LINE()
-kq.login(token="...")
+kq.login(token="MAN")
 kq.loginResult()
 
 kr = LINETCR.LINE()
-kr.login(token="...")
+kr.login(token="MAN")
 kr.loginResult()
 
 ks = LINETCR.LINE()
-ks.login(token="...")
+ks.login(token="MAN")
 ks.loginResult()
 
 kt = LINETCR.LINE()
-kt.login(token="...")
+kt.login(token="MAN")
 kt.loginResult()
 
 cl
 
-print "login success"
+print "login SELFBOT_MAN_PC"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 helpMessage ="""──────┅═ই۝ई═┅──────
@@ -91,142 +93,143 @@ helpMessage ="""──────┅═ই۝ई═┅──────
       ✯❇͜͡C͜͡r͜͡e͜͡a͜͡t͜͡o͜͡r✯͜͡$͜͡ë͜͡I͜͡F͜͡-͜͡฿͜͡o͜͡Ŧ❇✯
 http://line.me/ti/p/~1ove..neverdie
 ──────┅═ই۝ई═┅──────
-❂͜͡☆➣ Man tagall •แท๊กสมาชิกทั้งกลุ่ม
-❂͜͡☆➣ Man@tag แท๊กทั้งกลุ่ม
-❂͜͡☆➣ Mention แท๊กกลุ่ม
-❂͜͡☆➣ Gc / ข้อมูลผู้สร้างกลุ่ม
-❂͜͡☆➣ Me / Contact ME
-❂͜͡☆➣ You @ Contact YOU
-❂͜͡☆➣ xXx seed69
-❂͜͡☆➣ xXx 18+
-❂͜͡☆➣ My bot
-❂͜͡☆➣ Bot gift
-❂͜͡☆➣ Id / Uid
-❂͜͡☆➣ Mid / Mid @
-❂͜͡☆➣ Mid all / All mid
-❂͜͡☆➣ Gift / Gift all
-❂͜͡☆➣ Bot1-18 Gift
-❂͜͡☆➣ Gift you @
-❂͜͡☆➣ Cn: Display Name
-❂͜͡☆➣ Cc: Clock Name
-❂͜͡☆➣ Mc: Contact
-❂͜͡☆➣ Tl: [text]
-❂͜͡☆➣ Hi  ทักทาย
-❂͜͡☆➣ Auto join: on/off
-❂͜͡☆➣ Auto add: on/off
-❂͜͡☆➣ Auto leave: on/off
-❂͜͡☆➣ Clock: on/off
-❂͜͡☆➣ Share on
-❂͜͡☆➣ Add message: text
-❂͜͡☆➣ Message set:
-❂͜͡☆➣ Add comment: text
-❂͜͡☆➣ Comment set:
-❂͜͡☆➣ Cbroadcast text
-❂͜͡☆➣ Gbroadcast text
-❂͜͡☆➣ Reject  () ลบรัน
-❂͜͡☆➣ Reject1 () ลบรันบอท1
-❂͜͡☆➣ Reject2 () ลบรันบอท2
-❂͜͡☆➣ Reject3 () ลบรันบอท3
-❂͜͡☆➣ Reject4 () ลบรันบอท4
-❂͜͡☆➣ Reject5 () ลบรันบอท5
-❂͜͡☆➣ Reject6 () ลบรันบอท6
-❂͜͡☆➣ Reject7 () ลบรันบอท7
-❂͜͡☆➣ Reject8 () ลบรันบอท8
-❂͜͡☆➣ Reject9 () ลบรันบอท9
-❂͜͡☆➣ Reject10 () ลบรันบอท10
-❂͜͡☆➣ Reject11 () ลบรันบอท11
-❂͜͡☆➣ Reject12 () ลบรันบอท12
-❂͜͡☆➣ Reject13 () ลบรันบอท13
-❂͜͡☆➣ Reject14 () ลบรันบอท14
-❂͜͡☆➣ Reject15 () ลบรันบอท15
-❂͜͡☆➣ Reject16 () ลบรันบอท16
-❂͜͡☆➣ Reject17 () ลบรันบอท17
-❂͜͡☆➣ Reject18 () ลบรันบอท18
-❂͜͡☆➣ ลบแชท  ☜☞  ล้างแชท
-❂͜͡☆➣ ลบแชทบอท ☜☞ ล้างแชทบอท
-[C̶̲̅ᴏ̶̲̅ᴍ̶̲̅ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅ᴅ̶̲̅ ̶̲̅ɪ̶̲̅ɴ̶̲̅ ̶̲̅G̶̲̅ʀ̶̲̅ᴏ̶̲̅ᴜ̶̲̅ᴘ̶̲̅] 
-❂͜͡☆➣ Creator / Admin
-❂͜͡☆➣ Gn: text name group
-❂͜͡☆➣ Invite: mid
-❂͜͡☆➣ Ambilin @ Steal dp
-❂͜͡☆➣ Man copy @ copy profile
-❂͜͡☆➣ Mycopy @ Copy profile
-❂͜͡☆➣ Botcopy @ All bot copy
-❂͜͡☆➣ Copy all @ ทั้งหมด ก๊อป
-❂͜͡☆➣ Bot backup กลับร่าง
-❂͜͡☆➣ Botbb / บอทกลับร่างเดิม
-❂͜͡☆➣ Mybb / แอดมินกลับร่าง
-❂͜͡☆➣ Banlist / เช็คดำ
-❂͜͡☆➣ ข้อมูลบัญชีดำ / คท. ดำ
-❂͜͡☆➣ Contact ban / Conban
-❂͜͡☆➣ Clear ban / Cb / ล้างดำ
-❂͜͡☆➣ Mid ban / mid.Blacklist
-❂͜͡☆➣ Keluar @ target
-❂͜͡☆➣ Hack-mid:
-❂͜͡☆➣ Hack All 
-❂͜͡☆➣ Hack: @tag [mid+contact]
-❂͜͡☆➣ Hack pic @ Steal picS
-❂͜͡☆➣ Hack cover @ Steal coveR
-❂͜͡☆➣ Hack status @ StealstatuS
-❂͜͡☆➣ Mybot contactbot
-❂͜͡☆➣ All gift / Gift all
-❂͜͡☆➣ All mid / Bot mid
-❂͜͡☆➣ Cancel / Bcancel
-❂͜͡☆➣ Speed / !Sp  ความเลว 
-❂͜͡☆➣ Speedbot / Sp  ความเร็ว
-❂͜͡☆➣ Ginfo / ginfo / กลุ่ม
-❂͜͡☆➣ Gurl / Up Qr group
-❂͜͡☆➣ Link on/off
-❂͜͡☆➣ M1 link on/off
-❂͜͡☆➣ Gcancel: number
-❂͜͡☆➣ Masuk / Join
-❂͜͡☆➣ Glist
-❂͜͡☆➣ Sayang
-❂͜͡☆➣ Pulang
-❂͜͡☆➣ Ban @ target
-❂͜͡☆➣ Uban @ target
-❂͜͡☆➣ Setting / Set / Man set
-❂͜͡☆➣ Ban -> send contact
-❂͜͡☆➣ Unban -> send contact
-❂͜͡☆➣ Invite:on Send contact
-❂͜͡☆➣ Comment bl/wl
-❂͜͡☆➣ Kill 
-❂͜͡☆➣ Kill ban 
-❂͜͡☆➣ music 
-❂͜͡☆➣ .reboot
-❂͜͡☆➣ Wikipedia
-❂͜͡☆➣ Cleanse
-❂͜͡☆➣ Pbot / Bot?
-❂͜͡☆➣ Bcancel
-❂͜͡☆➣ M1-M2 tl:
-❂͜͡☆➣ M1-M2 say
-❂͜͡☆➣ M1-M2 tag
-❂͜͡☆➣ M1-M2 invite:
-❂͜͡☆➣ M1-M3 mid
-❂͜͡☆➣ M1-M2 url
-❂͜͡☆➣ M1-M5 gift
-❂͜͡☆➣ M1-M10 in
-❂͜͡☆➣ M1-M18 bye
-❂͜͡☆➣ M1 link on/off
-❂͜͡☆➣ M1-M18 rgroup
-❂͜͡☆➣ M1-M18 rename:
-❂͜͡☆➣ All: rename all:
-❂͜͡☆➣ Allbio: Isi bio:
-❂͜͡☆➣ @bye / Bye / #bye
-❂͜͡☆➣ Kicker / มาหำ / •••
-❂͜͡☆➣ Kick-Kick1-kick2 @tag
-❂͜͡☆➣ M1 kick - M9 kick @tag
-❂͜͡☆➣ Nk/Mk/??¿ @
-❂͜͡☆➣ Error! ล้างกลุ่ม
-❂͜͡☆➣ Run group  รันกลุ่ม
-❂͜͡☆➣ Man1-Man18  ข้อมูลบอท
-[Help] - [Help2] - [Helpbot]
-  [Set protect] - [Man set]
+ ╭═════════╬[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]╬═════════╮ 
+ ╠•͜͡☆➣  Man tagall แท๊กสมาชิกทั้งกลุ่ม
+ ╠•͜͡☆➣  Man@tag แท๊กทั้งกลุ่ม
+ ╠•͜͡☆➣  Mention แท๊กกลุ่ม
+ ╠•͜͡☆➣  Gc / ข้อมูลผู้สร้างกลุ่ม
+ ╠•͜͡☆➣  Me / Contact ME
+ ╠•͜͡☆➣  You @ Contact YOU
+ ╠•͜͡☆➣  xXx seed69
+ ╠•͜͡☆➣  xXx 18+
+ ╠•͜͡☆➣  My bot
+ ╠•͜͡☆➣  Bot gift
+ ╠•͜͡☆➣  Id / Uid
+ ╠•͜͡☆➣  Mid / Mid @
+ ╠•͜͡☆➣  Mid all / All mid
+ ╠•͜͡☆➣  Gift / Gift all
+ ╠•͜͡☆➣  Bot1-18 Gift
+ ╠•͜͡☆➣  Gift you @
+ ╠•͜͡☆➣  Cn: Display Name
+ ╠•͜͡☆➣  Cc: Clock Name
+ ╠•͜͡☆➣  Mc: Contact
+ ╠•͜͡☆➣  Tl: [text]
+ ╠•͜͡☆➣  Hi  ทักทาย
+ ╠•͜͡☆➣  Auto join: on-off
+ ╠•͜͡☆➣  Auto add: on-off
+ ╠•͜͡☆➣  Auto leave: on-off
+ ╠•͜͡☆➣  Clock: on-off
+ ╠•͜͡☆➣  Share on
+ ╠•͜͡☆➣  Add message: text
+ ╠•͜͡☆➣  Message set:
+ ╠•͜͡☆➣  Add comment: text
+ ╠•͜͡☆➣  Comment set:
+ ╠•͜͡☆➣  Cbroadcast text
+ ╠•͜͡☆➣  Gbroadcast text
+ ╠•͜͡☆➣  Reject  • ลบรัน
+ ╠•͜͡☆➣  Reject1 • ลบรันบอท1
+ ╠•͜͡☆➣  Reject2 • ลบรันบอท2
+ ╠•͜͡☆➣  Reject3 • ลบรันบอท3
+ ╠•͜͡☆➣  Reject4 • ลบรันบอท4
+ ╠•͜͡☆➣  Reject5 • ลบรันบอท5
+ ╠•͜͡☆➣  Reject6 • ลบรันบอท6
+ ╠•͜͡☆➣  Reject7 • ลบรันบอท7
+ ╠•͜͡☆➣  Reject8 • ลบรันบอท8
+ ╠•͜͡☆➣  Reject9 • ลบรันบอท9
+ ╠•͜͡☆➣  Reject10 • ลบรันบอท10
+ ╠•͜͡☆➣  Reject11 • ลบรันบอท11
+ ╠•͜͡☆➣  Reject12 • ลบรันบอท12
+ ╠•͜͡☆➣  Reject13 • ลบรันบอท13
+ ╠•͜͡☆➣  Reject14 • ลบรันบอท14
+ ╠•͜͡☆➣  Reject15 • ลบรันบอท15
+ ╠•͜͡☆➣  Reject16 • ลบรันบอท16
+ ╠•͜͡☆➣  Reject17 • ลบรันบอท17
+ ╠•͜͡☆➣  Reject18 • ลบรันบอท18
+ ╠•͜͡☆➣  ลบแชท  ☜☞  ล้างแชท
+ ╠•͜͡☆➣  ลบแชทบอท ☜☞ ล้างแชทบอท
+ ╰══════════╬♠️╬══════════╯
+ ╭══════════╬♥╬══════════╮
+ ║   [C̶̲̅ᴏ̶̲̅ᴍ̶̲̅ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅ᴅ̶̲̅ ̶̲̅ɪ̶̲̅ɴ̶̲̅ ̶̲̅G̶̲̅ʀ̶̲̅ᴏ̶̲̅ᴜ̶̲̅ᴘ̶̲̅] 
+ ╠•͜͡☆➣ Creator / Admin
+ ╠•͜͡☆➣ Gn: text name group
+ ╠•͜͡☆➣ Invite: mid
+ ╠•͜͡☆➣ Ambilin @ Steal dp
+ ╠•͜͡☆➣ Man copy @ copy profile
+ ╠•͜͡☆➣ Mycopy @ Copy profile
+ ╠•͜͡☆➣ Botcopy @ 18บอทก๊อปปี้
+ ╠•͜͡☆➣ Copy all @ ทั้งหมด โดนปี้
+ ╠•͜͡☆➣ Bot backup บอทกลับร่าง
+ ╠•͜͡☆➣ Botbb <--บอทกลับร่างเดิม
+ ╠•͜͡☆➣ Mybb <--แอดมินกลับร่าง
+ ╠•͜͡☆➣ Banlist / เช็คดำ
+ ╠•͜͡☆➣ ข้อมูลบัญชีดำ / คท. ดำ
+ ╠•͜͡☆➣ Contact ban / Conban
+ ╠•͜͡☆➣ Clear ban / Cb / ล้างดำ
+ ╠•͜͡☆➣ Mid ban  เช็คดำ id
+ ╠•͜͡☆➣ Hack-mid:
+ ╠•͜͡☆➣ Hack All 
+ ╠•͜͡☆➣ Hack: @[mid-contact]
+ ╠•͜͡☆➣ Hack pic @StealpicS
+ ╠•͜͡☆➣ Hack cover @StealcoveR
+ ╠•͜͡☆➣ Hack tus @StealstatuS
+ ╠•͜͡☆➣ My bot / contactbot
+ ╠•͜͡☆➣ All gift / Gift all
+ ╠•͜͡☆➣ All mid / Bot mid
+ ╠•͜͡☆➣ Cancel / Bcancel
+ ╠•͜͡☆➣ !Speed / !Sp สปีดหลอก
+ ╠•͜͡☆➣ Speedbot / Sp  ความเร็ว
+ ╠•͜͡☆➣ Ginfo / ginfo / กลุ่ม
+ ╠•͜͡☆➣ Gurl / Up Qr group
+ ╠•͜͡☆➣ Link on-off
+ ╠•͜͡☆➣ M1 link on-off
+ ╠•͜͡☆➣ Gcancel:499 on
+ ╠•͜͡☆➣ Glist เช็คกลุ่ม
+ ╠•͜͡☆➣ Ban @แท๊กระบุ
+ ╠•͜͡☆➣ Uban @แท๊กระบุ
+ ╠•͜͡☆➣ Setting / Set
+ ╠•͜͡☆➣ Ban -> ส่ง คท.
+ ╠•͜͡☆➣ Unban -> ส่ง คท.
+ ╠•͜͡☆➣ Invite:on ส่ง คท.
+ ╠•͜͡☆➣ Comment bl/wl
+ ╠•͜͡☆➣ Kill 
+ ╠•͜͡☆➣ Kill ban 
+ ╠•͜͡☆➣ music 
+ ╠•͜͡☆➣ .reboot
+ ╠•͜͡☆➣ Wikipedia
+ ╠•͜͡☆➣ Cleanse
+ ╠•͜͡☆➣ Pbot / Bot?
+ ╠•͜͡☆➣ Bcancel
+ ╠•͜͡☆➣ M1-M2 tl:
+ ╠•͜͡☆➣ M1-M2 say
+ ╠•͜͡☆➣ M1-M2 tag
+ ╠•͜͡☆➣ M1-M2 invite:
+ ╠•͜͡☆➣ M1-M3 mid
+ ╠•͜͡☆➣ M1-M2 url
+ ╠•͜͡☆➣ M1-M5 gift
+ ╠•͜͡☆➣ M1-M10 in
+ ╠•͜͡☆➣ M1-M18 bye
+ ╠•͜͡☆➣ M1 link on-off
+ ╠•͜͡☆➣ M1-M18 rgroup
+ ╠•͜͡☆➣ M1-M18 rename:
+ ╠•͜͡☆➣ All: rename all:
+ ╠•͜͡☆➣ Allbio: Isi bio:
+ ╠•͜͡☆➣ @bye / #bye / Bye
+ ╠•͜͡☆➣ Kicker / มาหำ / •••
+ ╠•͜͡☆➣ Kick-Kick1-kick2 @tag
+ ╠•͜͡☆➣ M1 - M9 kick @tag
+ ╠•͜͡☆➣ Nk /Mk /??¿ /Fuck @tag
+ ╠•͜͡☆➣ Error! / Kickall ล้างกลุ่ม
+ ╠•͜͡☆➣ Run group  รันกลุ่ม
+ ╠•͜͡☆➣ Man1-Man18  ข้อมูลบอท
+ ║[Help]-[Help2]-[Helpbot]
+ ║ [Set protect]-[Man set]
+ ╰══════════╬♠️╬══════════╯ 
 ──────┅═ই۝ई═┅──────
-နับთิஏთั้ଏบਹທV⒑ ทำเชลบอทกันรัน แท๊กได้ทั้งกลุ่ม
-สนใจติดต่อที่ •─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•
-http://line.me/ti/p/~security_botline
-──────┅═ই۝ई═┅──────   
+•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•
+နับთิஏთั้ଏบਹທV⒑ (รับทำเชลกันรัน-บอทแท๊ก)
+สอบถามรายละเอียดเพิ่มเติม..   Link⤵️
+http://line.me/ti/p/~1ove..neverdie
+──────┅═ই۝ई═┅──────
 """
 helpMessage2 ="""Mr. Bots…⛿
 ╔══╦═╦═╗
