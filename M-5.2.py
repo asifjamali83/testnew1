@@ -1,10 +1,18 @@
 # -*- coding: utf-8 -*-
+
+#=======STAP.1======#
+#import LINETCR
+#from LINETCR.lib.curve.ttypes import *
+#from datetime import datetime
+#import time,random,sys,json,codecs,threading,glob,requests,urllib
+#=======STAP.2======#
 import LINETCR
 from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
-import time,random,sys,json,codecs,threading,glob,requests,urllib
-#import time,random,sys,json,codecs,threading,glob,re
-
+from bs4 import BeautifulSoup
+import time, random, sys, re, os, json, subprocess, threading, string, codecs, requests, tweepy, ctypes, urllib, urllib2, wikipedia,tempfile,glob,shutil,unicodedata,goslate
+from gtts import gTTS 
+#===================#
 cl = LINETCR.LINE()
 cl.login(token="...")
 cl.loginResult()
