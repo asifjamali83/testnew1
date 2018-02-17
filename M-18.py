@@ -5568,8 +5568,8 @@ http://line.me/ti/p/~1ove..neverdie
 					for manusia in n:
 						cl.sendText(manusia,(bctxt))
 #---------------------------------------------------
-            elif msg.text in ["Mannn","แมน"]:
-                msg.contentType = 26
+            elif msg.text in ["บอท","แมน"]:
+                msg.contentType = 13
                 cl.sendText(msg.to, "สอบถามเรื่องบอท หรือปรึกษาเรื่องเชลบอทกันรัน ทักแชทได้ครับ")
                 cl.sendText(msg.to, "✯✯❇Thailand✯Creator❇✯✯")
                 msg.contentMetadata = {'mid': 'ud24af63fd62d14c3bf8f719df80c3745'}
@@ -6086,6 +6086,58 @@ http://line.me/ti/p/~1ove..neverdie
 						except:
 							cl.sendText(msg.to,"Error")
 							
+            elif ("Mkick " in msg.text):
+                   targets = []
+                   key = eval(msg.contentMetadata["MENTION"])
+                   key["MENTIONEES"] [0] ["M"]
+                   for x in key["MENTIONEES"]:
+                       targets.append(x["M"])
+                   for target in targets:
+                       try:
+                           cl.kickoutFromGroup(msg.to,[target])
+                           cl.inviteIntoGroup(msg.to,[target])
+                           cl.cancelGroupInvitation(msg.to,[target])
+                       except:
+                           cl.sendText(msg.to,"Error")
+
+            elif ("Bkick " in msg.text):
+                   targets = []
+                   key = eval(msg.contentMetadata["MENTION"])
+                   key["MENTIONEES"] [0] ["M"]
+                   for x in key["MENTIONEES"]:
+                       targets.append(x["M"])
+                   for target in targets:
+                       try:
+                           ki.kickoutFromGroup(msg.to,[target])
+                           ki.inviteIntoGroup(msg.to,[target])
+                           ki.cancelGroupInvitation(msg.to,[target])
+                           ki.inviteIntoGroup(msg.to,[target])
+                           ki.cancelGroupInvitation(msg.to,[target])
+                           ki.inviteIntoGroup(msg.to,[target])
+                           ki.cancelGroupInvitation(msg.to,[target])
+                           ki.inviteIntoGroup(msg.to,[target])
+                           ki.cancelGroupInvitation(msg.to,[target])
+                           ki.inviteIntoGroup(msg.to,[target])
+                           ki.cancelGroupInvitation(msg.to,[target])
+                           ki.inviteIntoGroup(msg.to,[target])
+                           ki.cancelGroupInvitation(msg.to,[target])
+                           ki.inviteIntoGroup(msg.to,[target])
+                           ki.cancelGroupInvitation(msg.to,[target])
+                           ki.inviteIntoGroup(msg.to,[target])
+                           ki.cancelGroupInvitation(msg.to,[target])
+                           ki.inviteIntoGroup(msg.to,[target])
+                           ki.cancelGroupInvitation(msg.to,[target])
+                           ki.inviteIntoGroup(msg.to,[target])
+                           ki.cancelGroupInvitation(msg.to,[target])
+                           ki.inviteIntoGroup(msg.to,[target])
+                           ki.cancelGroupInvitation(msg.to,[target])
+                           ki.inviteIntoGroup(msg.to,[target])
+                           ki.cancelGroupInvitation(msg.to,[target])
+                           ki.inviteIntoGroup(msg.to,[target])
+                           ki.cancelGroupInvitation(msg.to,[target])
+                       except:
+                           ki.sendText(msg.to,"Error")
+
             elif "??¿ " in msg.text:
                        nk0 = msg.text.replace("??¿ ","")
                        nk1 = nk0.lstrip()
