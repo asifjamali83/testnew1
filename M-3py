@@ -1,10 +1,18 @@
 # -*- coding: utf-8 -*-
+
+#=======STAP.1======#
+#import LINETCR
+#from LINETCR.lib.curve.ttypes import *
+#from datetime import datetime
+#import time,random,sys,json,codecs,threading,glob,requests,urllib
+#=======STAP.2======#
 import LINETCR
 from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
-import time,random,sys,json,codecs,threading,glob,requests,urllib
-#import time,random,sys,json,codecs,threading,glob,re
-
+from bs4 import BeautifulSoup
+import time, random, sys, re, os, json, subprocess, threading, string, codecs, requests, tweepy, ctypes, urllib, urllib2, wikipedia,tempfile,glob,shutil,unicodedata,goslate
+from gtts import gTTS 
+#===================#
 cl = LINETCR.LINE()
 cl.login(token="...")
 cl.loginResult()
@@ -1928,10 +1936,8 @@ def bot(op):
                 ki.removeAllMessages(op.param2)
                 kk.removeAllMessages(op.param2)                  
                 kc.removeAllMessages(op.param2)
-                kd.removeAllMessages(op.param2)
-                ke.removeAllMessages(op.param2)
                 cl.sendText(msg.to,"❇️Delete Chat Bot❇️")
-                cl.sendText(msg.to,"──────┅═ই۝ई═┅──────\n•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\nได้เคลียร์แชทบอท 18Kicker เรียบร้อย\n──────┅═ই۝ई═┅──────")
+                cl.sendText(msg.to,"──────┅═ই۝ई═┅──────\n•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•\nได้เคลียร์แชทบอท 3Kicker เรียบร้อย\n──────┅═ই۝ई═┅──────")
 #-----------------------------------------------------------
             elif "Spam @" in msg.text:
                 _name = msg.text.replace("Spam @","")
