@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 
 #=======STAP.1======#
-#import LINETCR
-#from LINETCR.lib.curve.ttypes import *
-#from datetime import datetime
-#import time,random,sys,json,codecs,threading,glob,requests,urllib
+import LINETCR
+from LINETCR.lib.curve.ttypes import *
+from datetime import datetime
+import time,random,sys,json,codecs,threading,glob,requests,urllib
 #=======STAP.2======#
 import LINETCR
 from LINETCR.lib.curve.ttypes import *
@@ -14,79 +14,79 @@ import time, random, sys, re, os, json, subprocess, threading, string, codecs, r
 from gtts import gTTS 
 #===================#
 cl = LINETCR.LINE()
-cl.login(token="MAN")
+cl.login(token="jo")
 cl.loginResult()
 #===================#
 ki = LINETCR.LINE()
-ki.login(token="MAN")
+ki.login(token="jo")
 ki.loginResult()
 #===================#
 kk = LINETCR.LINE()
-kk.login(token="MAN")
+kk.login(token="jo")
 kk.loginResult()
 #===================#
 kc = LINETCR.LINE()
-kc.login(token="MAN")
+kc.login(token="jo")
 kc.loginResult()
 #===================#
 kd = LINETCR.LINE()
-kd.login(token="MAN")
+kd.login(token="jo")
 kd.loginResult()
 #===================#
 ke = LINETCR.LINE()
-ke.login(token="MAN")
+ke.login(token="jo")
 ke.loginResult()
 #===================#
 kf = LINETCR.LINE()
-kf.login(token="MAN")
+kf.login(token="jo")
 kf.loginResult()
 #===================#
 kg = LINETCR.LINE()
-kg.login(token="MAN")
+kg.login(token="jo")
 kg.loginResult()
 #===================#
 kh = LINETCR.LINE()
-kh.login(token="MAN")
+kh.login(token="jo")
 kh.loginResult()
 #===================#
 kj = LINETCR.LINE()
-kj.login(token="MAN")
+kj.login(token="jo")
 kj.loginResult()
 #===================#
 kl = LINETCR.LINE()
-kl.login(token="MAN")
+kl.login(token="jo")
 kl.loginResult()
 #===================#
 km = LINETCR.LINE()
-km.login(token="MAN")
+km.login(token="jo")
 km.loginResult()
 #===================#
 kn = LINETCR.LINE()
-kn.login(token="MAN")
+kn.login(token="jo")
 kn.loginResult()
 #===================#
 ko = LINETCR.LINE()
-ko.login(token="MAN")
+ko.login(token="jo")
 ko.loginResult()
 #===================#
 kp = LINETCR.LINE()
-kp.login(token="MAN")
+kp.login(token="jo")
 kp.loginResult()
 #===================#
 kq = LINETCR.LINE()
-kq.login(token="MAN")
+kq.login(token="jo")
 kq.loginResult()
 #===================#
 kr = LINETCR.LINE()
-kr.login(token="MAN")
+kr.login(token="jo")
 kr.loginResult()
 #===================#
 ks = LINETCR.LINE()
-ks.login(token="MAN")
+ks.login(token="jo")
 ks.loginResult()
 #===================#
 kt = LINETCR.LINE()
-kt.login(token="MAN")
+kt.login(token="jo")
 kt.loginResult()
 #===================#
 cl
@@ -97,7 +97,7 @@ sys.setdefaultencoding('utf-8')
 helpMessage ="""──────┅═ই۝ई═┅──────
              ✯✯❇Thailand❇✯✯
       ✯❇͜͡C͜͡r͜͡e͜͡a͜͡t͜͡o͜͡r✯͜͡$͜͡ë͜͡I͜͡F͜͡-͜͡฿͜͡o͜͡Ŧ❇✯
-http://line.me/ti/p/~1ove..neverdie
+
 ──────┅═ই۝ई═┅──────
  ╭═════════╬[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]╬═════════╮ 
  ╠•͜͡☆➣  Man tagall แท๊กสมาชิกทั้งกลุ่ม
