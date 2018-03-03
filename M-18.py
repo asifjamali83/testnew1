@@ -14,90 +14,90 @@ import time, random, sys, re, os, json, subprocess, threading, string, codecs, r
 from gtts import gTTS 
 #===================#
 cl = LINETCR.LINE()
-cl.login(token="MAN")
+cl.login(token="jo")
 cl.loginResult()
 #===================#
 ki = LINETCR.LINE()
-ki.login(token="MAN")
+ki.login(token="jo")
 ki.loginResult()
 #===================#
 kk = LINETCR.LINE()
-kk.login(token="MAN")
+kk.login(token="jo")
 kk.loginResult()
 #===================#
 kc = LINETCR.LINE()
-kc.login(token="MAN")
+kc.login(token="jo")
 kc.loginResult()
 #===================#
 kd = LINETCR.LINE()
-kd.login(token="MAN")
+kd.login(token="jo")
 kd.loginResult()
 #===================#
 ke = LINETCR.LINE()
-ke.login(token="MAN")
+ke.login(token="jo")
 ke.loginResult()
 #===================#
 kf = LINETCR.LINE()
-kf.login(token="MAN")
+kf.login(token="jo")
 kf.loginResult()
 #===================#
 kg = LINETCR.LINE()
-kg.login(token="MAN")
+kg.login(token="jo")
 kg.loginResult()
 #===================#
 kh = LINETCR.LINE()
-kh.login(token="MAN")
+kh.login(token="jo")
 kh.loginResult()
 #===================#
 kj = LINETCR.LINE()
-kj.login(token="MAN")
+kj.login(token="jo")
 kj.loginResult()
 #===================#
 kl = LINETCR.LINE()
-kl.login(token="MAN")
+kl.login(token="jo")
 kl.loginResult()
 #===================#
 km = LINETCR.LINE()
-km.login(token="MAN")
+km.login(token="jo")
 km.loginResult()
 #===================#
 kn = LINETCR.LINE()
-kn.login(token="MAN")
+kn.login(token="jo")
 kn.loginResult()
 #===================#
 ko = LINETCR.LINE()
-ko.login(token="MAN")
+ko.login(token="jo")
 ko.loginResult()
 #===================#
 kp = LINETCR.LINE()
-kp.login(token="MAN")
+kp.login(token="jo")
 kp.loginResult()
 #===================#
 kq = LINETCR.LINE()
-kq.login(token="MAN")
+kq.login(token="jo")
 kq.loginResult()
 #===================#
 kr = LINETCR.LINE()
-kr.login(token="MAN")
+kr.login(token="jo")
 kr.loginResult()
 #===================#
 ks = LINETCR.LINE()
-ks.login(token="MAN")
+ks.login(token="jo")
 ks.loginResult()
 #===================#
 kt = LINETCR.LINE()
-kt.login(token="MAN")
+kt.login(token="jo")
 kt.loginResult()
 #===================#
 cl
 
-print "login SELFBOT_MAN_PC"
+print "login SELFBOT_jo_PC"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 helpMessage ="""──────┅═ই۝ई═┅──────
              ✯✯❇Thailand❇✯✯
       ✯❇͜͡C͜͡r͜͡e͜͡a͜͡t͜͡o͜͡r✯͜͡$͜͡ë͜͡I͜͡F͜͡-͜͡฿͜͡o͜͡Ŧ❇✯
-http://line.me/ti/p/~1ove..neverdie
+http://line.me/ti/p/~tinnakorn941
 ──────┅═ই۝ई═┅──────
  ╭═════════╬[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]╬═════════╮ 
  ╠•͜͡☆➣  Man tagall แท๊กสมาชิกทั้งกลุ่ม
@@ -235,7 +235,7 @@ http://line.me/ti/p/~1ove..neverdie
 နับთิஏთั้ଏบਹທV⒑
 (รับทำเชลกันรัน-บอทแท๊ก)
 สอบถามรายละเอียดเพิ่มเติม..   Link⤵️
-http://line.me/ti/p/~1ove..neverdie
+http://line.me/ti/p/~tinnakorn941
 ──────┅═ই۝ई═┅──────
 """
 
@@ -244,7 +244,7 @@ helpMessage2 ="""Mr. Bots…⛿
 ║║║║║║║║    ✯✯❇ᵀᴴᴬᴵᴸᴬᴺᴰ❇✯✯
 ║║║║╦║║║  ❇͜͡C͜͡r͜͡e͜͡a͜͡t͜͡o͜͡r✯͜͡$͜͡ë͜͡I͜͡F͜͡-͜͡฿͜͡o͜͡Ŧ❇
 ╚╩╩╩╩╩╩╝️ နับთิஏთั้ଏบਹທ SirichanV⒑
-http://line.me/ti/p/~1ove..neverdie
+http://line.me/ti/p/~tinnakorn941
 ╔═════════════════════╗
 ║•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•
 ╠═════════════════════╝
@@ -318,12 +318,12 @@ autocancel = {}
 autoinvite = []
 autoleaveroom = []
 targets = []
-Bots = ["ud24af63fd62d14c3bf8f719df80c3745",mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Jmid,Lmid,Mmid,Nmid,Omid,Pmid,Qmid,Rmid,Smid,Tmid]
-self = ["ud24af63fd62d14c3bf8f719df80c3745",mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Jmid,Lmid,Mmid,Nmid,Omid,Pmid,Qmid,Rmid,Smid,Tmid]
-admin = "ud24af63fd62d14c3bf8f719df80c3745"
-owner = "ud24af63fd62d14c3bf8f719df80c3745"
-admsa = "ud24af63fd62d14c3bf8f719df80c3745"
-adminMID = "ud24af63fd62d14c3bf8f719df80c3745"
+Bots = ["u15d6baf1b56b371f98fe441f0abf3ec5",mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Jmid,Lmid,Mmid,Nmid,Omid,Pmid,Qmid,Rmid,Smid,Tmid]
+self = ["u15d6baf1b56b371f98fe441f0abf3ec5",mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Jmid,Lmid,Mmid,Nmid,Omid,Pmid,Qmid,Rmid,Smid,Tmid]
+admin = "u15d6baf1b56b371f98fe441f0abf3ec5"
+owner = "u15d6baf1b56b371f98fe441f0abf3ec5"
+admsa = "u15d6baf1b56b371f98fe441f0abf3ec5"
+adminMID = "u15d6baf1b56b371f98fe441f0abf3ec5"
 wait = {
     'contact':False,
     'autoJoin':False,
@@ -331,7 +331,7 @@ wait = {
     'leaveRoom':True,
     'timeline':True,
     'autoAdd':False,
-    'message':"""「Auto ADD」 Man..✍️
+    'message':"""「Auto ADD」 ✍☆ĴǾ*ﾟ¨ﾟ✎･
  ╔══╦═╦═╗
  ║║║║║║║║🌟🌟🌟🌟🌟
  ║║║║╦║║║ Mr. Bots…⛿
@@ -409,8 +409,8 @@ Viewlastseen    เช็คอ่าน
    ✍️รับติดตั้ง ฿❂Ŧ✔Sirichan v⒑
  Install Line Group Security Bots.
 ระบบรักษาความปลอดภัยของกลุ่มไลน์
-  🔘ลงบอทกลุ่มที่มีสมาชิก 200 บาท
-  🔘กลุ่มบอท ชุด12ตัว  120 บาท
+  🔘ลงบอทกลุ่มที่มีสมาชิก 250 บาท
+  🔘กลุ่มบอท ชุด12ตัว  150 บาท
   🔘เพิ่มบอทเสริม ชุดล่ะ 100 บาท
     🔘ประกันกลุ่ม 50.- ช่วยดูแลแก้ไข
 เปลี่ยนฟรีให้ลูกค้าเมื่อบอทขัดข้อง
@@ -438,9 +438,9 @@ Viewlastseen    เช็คอ่าน
 ──────┅═ই۝ई═┅──────
 รับทำเชลบอทกันรัน (บอทส่วนตัว) แท๊กได้ทั้งกลุ่ม
 สนใจติดต่อที่  ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ
-🆔http://line.me/ti/p/~1ove..neverdie
+🆔http://line.me/ti/p/~tinnakorn941
 နับთิஏთั้ଏบਹທ  Sirichan V⒑
-http://line.me/ti/p/~security_botline
+http://line.me/ti/p/~tinnakorn941
 ──────┅═ই۝ई═┅──────
 """,
     "lang":"JP",
@@ -2473,7 +2473,7 @@ def bot(op):
             msg = op.message
             if msg.toType == 0:
                 msg.to = msg.from_
-                if msg.from_ == "ud24af63fd62d14c3bf8f719df80c3745":
+                if msg.from_ == "u15d6baf1b56b371f98fe441f0abf3ec5":
                     if "join:" in msg.text:
                         list_ = msg.text.split(":")
                         try:
@@ -3802,7 +3802,7 @@ Viewlastseen    เช็คอ่าน
 
     ✫☆✰สนใจทักมาสอบถาม✰☆✫
 🔽🔻🔽🔻🔽🔻🔽🔻🔽🔻🔽🔻🔽
-http://line.me/ti/p/~security_botline
+http://line.me/ti/p/~tinnakorn941
 🔈🔉🔊ท่านที่เพิ่มเพื่อนเด้งแชทด้วยคับ
 หากไม่ถูกใจบริการ ไม่ซื้อไม่เป็นไร
 ยินดีให้คำแนะนำ พร้อมให้ทดลองบอท
@@ -3816,9 +3816,9 @@ http://line.me/ti/p/~security_botline
 ──────┅═ই۝ई═┅──────
 รับทำเชลบอทกันรัน  (บอทส่วนตัว)
 สนใจติดต่อที่  ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ
-🆔http://line.me/ti/p/~1ove..neverdie
+🆔http://line.me/ti/p/~tinnakorn941
 နับთิஏთั้ଏบਹທ  Sirichan V⒑
-📧https://line.me/R/ti/p/%40uvh1233u
+📧http://line.me/ti/p/~tinnakorn941
 ──────┅═ই۝ई═┅──────
 """)
 #-------------------------------------------------
@@ -4088,7 +4088,7 @@ http://line.me/ti/p/~security_botline
 ──────┅═ই۝ई═┅──────
 နับთิஏთั้ଏบਹທV⒑ (รับทำเชลบอทกันรัน)
 สนใจติดต่อที่  ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ
-http://line.me/ti/p/~1ove..neverdie
+http://line.me/ti/p/~tinnakorn941
 ──────┅═ই۝ई═┅──────""")
 
             elif msg.text in ["Ss"]:
@@ -5568,11 +5568,11 @@ http://line.me/ti/p/~1ove..neverdie
 					for manusia in n:
 						cl.sendText(manusia,(bctxt))
 #---------------------------------------------------
-            elif msg.text in ["บอท","แมน"]:
+            elif msg.text in ["บอท","พี่โจ"]:
                 msg.contentType = 13
                 cl.sendText(msg.to, "สอบถามเรื่องบอท หรือปรึกษาเรื่องเชลบอทกันรัน ทักแชทได้ครับ")
                 cl.sendText(msg.to, "✯✯❇Thailand✯Creator❇✯✯")
-                msg.contentMetadata = {'mid': 'ud24af63fd62d14c3bf8f719df80c3745'}
+                msg.contentMetadata = {'mid': 'u15d6baf1b56b371f98fe441f0abf3ec5'}
                 cl.sendMessage(msg)
 #---------------------------------------------------
             elif msg.text in ["Man. All","Kicker","มาหำ","บอทเข้า"]:
