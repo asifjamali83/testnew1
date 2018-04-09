@@ -13,6 +13,17 @@ from bs4 import BeautifulSoup
 import time, random, sys, re, os, json, subprocess, threading, string, codecs, requests, tweepy, ctypes, urllib, urllib2, wikipedia,tempfile,glob,shutil,unicodedata,goslate
 from gtts import gTTS 
 #===================#
+# -*- coding: utf-8 -*-
+import LINETCR
+from LINETCR.lib.curve.ttypes import *
+from datetime import datetime
+import time, random, sys, ast, re, os, io, json, subprocess, threading, string, codecs, requests, ctypes, urllib, urllib2, urllib3, wikipedia, tempfile
+from bs4 import BeautifulSoup
+from urllib import urlopen
+from io import StringIO
+from threading import Thread
+from gtts import gTTS
+from googletrans import Translator
 cl = LINETCR.LINE()
 cl.login(token="...")
 cl.loginResult()
@@ -45,13 +56,13 @@ sys.setdefaultencoding('utf-8')
 helpMessage ="""──────┅═ই۝ई═┅──────
              ✯✯❇Thailand❇✯✯
       ✯❇͜͡C͜͡r͜͡e͜͡a͜͡t͜͡o͜͡r✯͜͡$͜͡ë͜͡I͜͡F͜͡-͜͡฿͜͡o͜͡Ŧ❇✯
-http://line.me/ti/p/~1ove..neverdie
+http://line.me/ti/p/~tinnakorn941
 ──────┅═ই۝ई═┅──────
-❂͜͡☆➣ Man tagall •แท๊กสมาชิกทั้งกลุ่ม
-❂͜͡☆➣ Man@tag แท๊กทั้งกลุ่ม
+❂͜͡☆➣ ทุกคน•แท๊กสมาชิกทั้งกลุ่ม
+❂͜͡☆➣ ทุกคน แท๊กทั้งกลุ่ม
 ❂͜͡☆➣ Mention แท๊กกลุ่ม
 ❂͜͡☆➣ Gc / ข้อมูลผู้สร้างกลุ่ม
-❂͜͡☆➣ Me / Contact ME
+❂͜͡☆➣ พี่โจ / Contact ME
 ❂͜͡☆➣ You @ Contact YOU
 ❂͜͡☆➣ xXx seed69
 ❂͜͡☆➣ xXx 18+
@@ -108,9 +119,9 @@ http://line.me/ti/p/~1ove..neverdie
 ❂͜͡☆➣ Hack-mid:
 ❂͜͡☆➣ Hack All 
 ❂͜͡☆➣ Hack: @tag [mid+contact]
-❂͜͡☆➣ Hack pic @ Steal picS
-❂͜͡☆➣ Hack cover @ Steal coveR
-❂͜͡☆➣ Hack status @ StealstatuS
+❂͜͡☆➣ รูป @ Steal picS
+❂͜͡☆➣ ปก @ Steal coveR
+❂͜͡☆➣ ตัส @ StealstatuS
 ❂͜͡☆➣ Mybot contactbot
 ❂͜͡☆➣ All gift / Gift all
 ❂͜͡☆➣ All mid / Bot mid
@@ -155,20 +166,20 @@ http://line.me/ti/p/~1ove..neverdie
 ❂͜͡☆➣ M1-M18 rename:
 ❂͜͡☆➣ All: rename all:
 ❂͜͡☆➣ Allbio: Isi bio:
-❂͜͡☆➣ @bye / Bye / #bye
-❂͜͡☆➣ Kicker / มาหำ / •••
+❂͜͡☆➣ ชิ้วๆๆ / Bye / #bye
+❂͜͡☆➣ Kicker / มาหำ / /เด็กๆ•••
 ❂͜͡☆➣ Kick-Kick1-kick2 @tag
 ❂͜͡☆➣ M1 kick - M9 kick @tag
-❂͜͡☆➣ Nk/Mk/??¿ @
+❂͜͡☆➣ Nk/Mk/ผี @
 ❂͜͡☆➣ Error! ล้างกลุ่ม
 ❂͜͡☆➣ Run group  รันกลุ่ม
 ❂͜͡☆➣ Man1-Man18  ข้อมูลบอท
 [Help] - [Help2] - [Helpbot]
-  [Set protect] - [Man set]
+  [Set protect] - [jo set]
 ──────┅═ই۝ई═┅──────
 နับთิஏთั้ଏบਹທV⒑ ทำเชลบอทกันรัน แท๊กได้ทั้งกลุ่ม
 สนใจติดต่อที่ •─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•
-http://line.me/ti/p/~security_botline
+http://line.me/ti/p/~tinnakorn941
 ──────┅═ই۝ई═┅──────   
 """
 helpMessage2 ="""Mr. Bots…⛿
@@ -176,7 +187,7 @@ helpMessage2 ="""Mr. Bots…⛿
 ║║║║║║║║    ✯✯❇ᵀᴴᴬᴵᴸᴬᴺᴰ❇✯✯
 ║║║║╦║║║  ❇͜͡C͜͡r͜͡e͜͡a͜͡t͜͡o͜͡r✯͜͡$͜͡ë͜͡I͜͡F͜͡-͜͡฿͜͡o͜͡Ŧ❇
 ╚╩╩╩╩╩╩╝️ နับთิஏთั้ଏบਹທ SirichanV⒑
-http://line.me/ti/p/~1ove..neverdie
+http://line.me/ti/p/~tinnakorn941
 ╔═════════════════════╗
 ║•─ ͜͡✫ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ ͜͡✫─•
 ╠═════════════════════╝
@@ -237,12 +248,12 @@ autocancel = {}
 autoinvite = []
 autoleaveroom = []
 targets = []
-Bots = ["ud24af63fd62d14c3bf8f719df80c3745",mid,Amid,Bmid,Cmid,Dmid,Emid]
-self = ["ud24af63fd62d14c3bf8f719df80c3745",mid,Amid,Bmid,Cmid,Dmid,Emid]
-admin = "ud24af63fd62d14c3bf8f719df80c3745"
-owner = "ud24af63fd62d14c3bf8f719df80c3745"
-admsa = "ud24af63fd62d14c3bf8f719df80c3745"
-adminMID = "ud24af63fd62d14c3bf8f719df80c3745"
+Bots = ["u15d6baf1b56b371f98fe441f0abf3ec5",mid,Amid,Bmid,Cmid,Dmid,Emid]
+self = ["u15d6baf1b56b371f98fe441f0abf3ec5",mid,Amid,Bmid,Cmid,Dmid,Emid]
+admin = "u15d6baf1b56b371f98fe441f0abf3ec5"
+owner = "u15d6baf1b56b371f98fe441f0abf3ec5"
+admsa = "u15d6baf1b56b371f98fe441f0abf3ec5"
+adminMID = "u15d6baf1b56b371f98fe441f0abf3ec5"
 wait = {
     'contact':False,
     'autoJoin':False,
@@ -328,8 +339,8 @@ Viewlastseen    เช็คอ่าน
    ✍️รับติดตั้ง ฿❂Ŧ✔Sirichan v⒑
  Install Line Group Security Bots.
 ระบบรักษาความปลอดภัยของกลุ่มไลน์
-  🔘ลงบอทกลุ่มที่มีสมาชิก 200 บาท
-  🔘กลุ่มบอท ชุด12ตัว  120 บาท
+  🔘ลงบอทกลุ่มที่มีสมาชิก 250 บาท
+  🔘กลุ่มบอท ชุด12ตัว  150 บาท
   🔘เพิ่มบอทเสริม ชุดล่ะ 100 บาท
     🔘ประกันกลุ่ม 50.- ช่วยดูแลแก้ไข
 เปลี่ยนฟรีให้ลูกค้าเมื่อบอทขัดข้อง
@@ -354,7 +365,7 @@ Viewlastseen    เช็คอ่าน
 
     ✫☆✰สนใจทักมาสอบถาม✰☆✫
 🔽🔻🔽🔻🔽🔻🔽🔻🔽🔻🔽🔻🔽
-http://line.me/ti/p/~security_botline
+http://line.me/ti/p/~tinnakorn941
 🔈🔉🔊ท่านที่เพิ่มเพื่อนเด้งแชทด้วยคับ
 หากไม่ถูกใจบริการ ไม่ซื้อไม่เป็นไร
 ยินดีให้คำแนะนำ พร้อมให้ทดลองบอท
@@ -368,9 +379,9 @@ http://line.me/ti/p/~security_botline
 ──────┅═ই۝ई═┅──────
 รับทำเชลบอทกันรัน(บอทส่วนตัว)แท๊กได้ทั้งกลุ่ม
 สนใจติดต่อที่..  ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ
-🆔http://line.me/ti/p/~1ove..neverdie
+🆔http://line.me/ti/p/~tinnakorn941
 နับთิஏთั้ଏบਹທ  Sirichan V⒑
-http://line.me/ti/p/~security_botline
+http://line.me/ti/p/~tinnakorn941
 ──────┅═ই۝ई═┅──────
 """,
     "lang":"JP",
@@ -1469,7 +1480,7 @@ def bot(op):
             msg = op.message
             if msg.toType == 0:
                 msg.to = msg.from_
-                if msg.from_ == "ud24af63fd62d14c3bf8f719df80c3745":
+                if msg.from_ == "u15d6baf1b56b371f98fe441f0abf3ec5":
                     if "join:" in msg.text:
                         list_ = msg.text.split(":")
                         try:
@@ -1710,7 +1721,7 @@ def bot(op):
                 if jml > 500:
                     cl.sendText(msg.to,'Member melebihi batas.')
                 cnt = Message()
-                cnt.text = "[Member List TAG number : " + str(jml) +  " Members]\n\n──────┅═ই۝ई═┅──────\nနับთิஏთั้ଏบਹທ.. Sirichan V⒑\nรับเขียนบอทกันรัน - แท๊กได้ทั้งกลุ่ม\nทักมาสอบถามรายละเอียดได้ครับ  คลิ้กลิงก์↲\n📧https://line.me/R/ti/p/%40uvh1233u\n──────┅═ই۝ई═┅──────"
+                cnt.text = "[Member List TAG number : " + str(jml) +  " Members]\n\n──────┅═ই۝ई═┅──────\nနับთิஏთั้ଏบਹທ.. Sirichan V⒑\nรับเขียนบอทกันรัน - แท๊กได้ทั้งกลุ่ม\nทักมาสอบถามรายละเอียดได้ครับ  คลิ้กลิงก์↲\n📧http://line.me/ti/p/~tinnakorn941\n──────┅═ই۝ई═┅──────"
                 cnt.to = msg.to
                 cl.sendMessage(cnt)
 
@@ -1897,7 +1908,7 @@ def bot(op):
                 msg.contentMetadata = {'mid': Emid}
                 ke.sendMessage(msg)
 
-            elif "Me" == msg.text:
+            elif "พี่โจ" == msg.text:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': mid}
                 cl.sendMessage(msg)
@@ -2465,8 +2476,8 @@ Viewlastseen    เช็คอ่าน
     ✍️รับติดตั้ง ฿❂Ŧ✔Sirichan v⒑
  Install Line Group Security Bots.
 ระบบรักษาความปลอดภัยของกลุ่มไลน์
-  🔘ลงบอทกลุ่มที่มีสมาชิก 200 บาท
-  🔘กลุ่มบอท ชุด12ตัว  100 บาท
+  🔘ลงบอทกลุ่มที่มีสมาชิก 250 บาท
+  🔘กลุ่มบอท ชุด12ตัว  150 บาท
   🔘เพิ่มบอทเสริม ชุดล่ะ 100 บาท
   🔘ประกันกลุ่ม 50.- ช่วยดูแลแก้ไข
 เปลี่ยนฟรีให้ลูกค้าเมื่อบอทขัดข้อง
@@ -2491,12 +2502,12 @@ Viewlastseen    เช็คอ่าน
 
     ✫☆✰สนใจทักมาสอบถาม✰☆✫
 🔽🔻🔽🔻🔽🔻🔽🔻🔽🔻🔽🔻🔽
-http://line.me/ti/p/~security_botline
+http://line.me/ti/p/~tinnakorn941
 🔈🔉🔊ท่านที่เพิ่มเพื่อนเด้งแชทด้วยคับ
 หากไม่ถูกใจบริการ ไม่ซื้อไม่เป็นไร
 ยินดีให้คำแนะนำ พร้อมให้ทดลองบอท
 อีกหนึ่งช่องทาง *ติดต่อเพิ่มเติมได้..↲
-📲0639375811ติดต่อเรื่องงานเท่านั้น
+📲0936081941ติดต่อเรื่องงานเท่านั้น
 ✅รับเขียนบอทโต้ตอบ ✰Bot API✰
 ✅รับสร้างไลน์ส่วนตัว LINE ProGram
       แฮ๊กธีมไลน์ฟรีทุกธีม สนใจทัก
@@ -2505,9 +2516,9 @@ http://line.me/ti/p/~security_botline
 ──────┅═ই۝ई═┅──────
 รับทำเชลบอทกันรัน  (บอทส่วนตัว)
 สนใจติดต่อที่  ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ
-🆔http://line.me/ti/p/~1ove..neverdie
+🆔http://line.me/ti/p/~tinnakorn941
 နับთิஏთั้ଏบਹທ  Sirichan V⒑
-http://line.me/ti/p/~security_botline
+http://line.me/ti/p/~tinnakorn941
 ──────┅═ই۝ई═┅──────
 """)
 #-------------------------------------------------
@@ -2764,7 +2775,7 @@ http://line.me/ti/p/~security_botline
 ──────┅═ই۝ई═┅──────
 နับთิஏთั้ଏบਹທ V⒑ (รับทำเชลบอทกันรัน)
 สนใจติดต่อที่  ѕєʟғвот[ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅]κɪcκєʀ
-http://line.me/ti/p/~1ove..neverdie
+http://line.me/ti/p/~tinnakorn941
 ──────┅═ই۝ई═┅──────""")
 
             elif msg.text in ["Ss"]:
@@ -3219,7 +3230,7 @@ http://line.me/ti/p/~1ove..neverdie
                 msg.contentMetadata = {'mid': admsa}
                 cl.sendMessage(msg)
 		
-            elif msg.text in ["Set","Man set"]:
+            elif msg.text in ["Set","jo set"]:
                 print "Setting pick up..."
                 md = "✯❇️[C̶̲̅ᴏ̶̲̅ᴍ̶̲̅ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅ᴅ̶̲̅ ̶̲̅S̶̲̅E̶̲̅T̶̲̅T̶̲̅I̶̲̅N̶̲̅G̶̲̅s̶̲̅]❇️✯\n─────┅═ই۝ई═┅─────\n"
                 if wait["likeOn"] == True: md+="✔ Auto like : on \n"
@@ -3535,9 +3546,9 @@ http://line.me/ti/p/~1ove..neverdie
                 else:
                     cl.sendText(msg.to,"Please turn on the name clock")
 #========================================
-            elif "Hack cover @" in msg.text:            
+            elif "ปก @" in msg.text:            
                 print "[Command]dp executing"
-                _name = msg.text.replace("Hack cover @","")
+                _name = msg.text.replace("ปก @","")
                 _nametarget = _name.rstrip('  ')
                 gs = cl.getGroup(msg.to)
                 targets = []
@@ -3568,10 +3579,10 @@ http://line.me/ti/p/~1ove..neverdie
                 except Exception as error:
                     cl.sendText(msg.to,(error))
                     pass
-            elif "Hack pic " in msg.text:
+            elif "รูป " in msg.text:
                 if msg.toType == 2:
                     msg.contentType = 0
-                    steal0 = msg.text.replace("Hack pic ","")
+                    steal0 = msg.text.replace("รูป ","")
                     steal1 = steal0.lstrip()
                     steal2 = steal1.replace("@","")
                     steal3 = steal2.rstrip()
@@ -3779,7 +3790,7 @@ http://line.me/ti/p/~1ove..neverdie
                             for rom in wait2["ROM"][msg.to].items():
                                 print rom
                                 chiya += rom[1] + "\n"
-                        cl.sendText(msg.to, "=======『✰$ëlf☠️฿❂T☠️️ℳѦれ✰』\n📇ตรวจสอบรายชื่อ.. [สมาชิกอ่านกลุ่ม]\n %s\n\n\n==============================\n☛Checklist Members Read Chat Groups\n==============================\n%s\n\n☛ Update the latest time♪\n〖%s〗\nby ✍️$ëlf☠️฿❂Ŧ☠️️ℳѦれ☆۰۪۫======="  %(wait2['readMember'][msg.to],chiya,setTime[msg.to]))
+                        cl.sendText(msg.to, "=======『✰$ëlf☠️฿❂T☠️️✧✍ಬี่ໂম✧✰』\n📇ตรวจสอบรายชื่อ.. [สมาชิกอ่านกลุ่ม]\n %s\n\n\n==============================\n☛Checklist Members Read Chat Groups\n==============================\n%s\n\n☛ Update the latest time♪\n〖%s〗\nby ✍️$ëlf☠️฿❂Ŧ☠️️✧✍ಬี่ໂম✧☆۰۪۫======="  %(wait2['readMember'][msg.to],chiya,setTime[msg.to]))
                     else:
                         cl.sendText(msg.to, "╔═════════════════%s\n╠═════════════════\n%s╠═════════════════\n║Readig point creation:\n║ [%s]\n╚══════════════════"  % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
 #========================================
@@ -3827,7 +3838,7 @@ http://line.me/ti/p/~1ove..neverdie
             elif msg.text.lower() == 'hi':
                 ginfo = cl.getGroup(msg.to)
                 cl.sendText(msg.to,"Hello, Admin and group members " + str(ginfo.name))
-                cl.sendText(msg.to,"สวัสดีกลุ่ม" + str(ginfo.name) + "\nสอบถามเรื่องบอท ทักได้ เพจใหม่! : มีครบทุกฟังชั่น\n•บอทป้องกัน\n•บอทบิน\n•บอทแท๊ก\n•บอทกันรัน และ ล้างรัน\n✯✯❇Thailand✯Creator❇✯✯\n•─ ͜͡✫ѕєʟғвот﴾ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅﴿κɪcκєʀ ͜͡✫─•\nhttp://line.me/ti/p/~1ove..neverdie "+ ginfo.creator.displayName )
+                cl.sendText(msg.to,"สวัสดีกลุ่ม" + str(ginfo.name) + "\nสอบถามเรื่องบอท ทักได้ เพจใหม่! : มีครบทุกฟังชั่น\n•บอทป้องกัน\n•บอทบิน\n•บอทแท๊ก\n•บอทกันรัน และ ล้างรัน\n✯✯❇Thailand✯Creator❇✯✯\n•─ ͜͡✫ѕєʟғвот﴾ᴍ̶̲̅ᴀ̶̲̅ɴ̶̲̅﴿κɪcκєʀ ͜͡✫─•\nhttp://line.me/ti/p/~tinnakorn941 "+ ginfo.creator.displayName )
 #================================================
 #------------------Fungsi spam start--------------------
             elif "Spam change: " in msg.text:
@@ -3898,9 +3909,9 @@ http://line.me/ti/p/~1ove..neverdie
 #---------------------------------------------------
             elif msg.text in ["ทีมงาน","ทีมทดลองบอท"]:
                 msg.contentType = 13
-                cl.sendText(msg.to, "[☢Ŧ€₳M≈ನန้ণএ≈฿❂Ŧ☢]\n[ทีมงานทีมทดลองบอท]")
-                cl.sendText(msg.to, "ผู้จัดการทีมงาน:🐯हईທຮຮๅજईह🐯")
-                msg.contentMetadata = {'mid': 'u820d01252fdcf2a539fa194bcfc3400e'}
+                cl.sendText(msg.to, "[✧✍ಬี่ໂম✧]\n[✍☆✧✍ಬี่ໂম✧*ﾟ¨ﾟ✎･]")
+                cl.sendText(msg.to, "ผู้จัดการทีมงาน:ట.ざ.Çآʊɮ👑Đѓäɠøŋ♂₣įѓë")
+                msg.contentMetadata = {'mid': 'u15d6baf1b56b371f98fe441f0abf3ec5'}
                 cl.sendMessage(msg)
                 cl.sendText(msg.to, "รองผู้จัดการทีมงาน:β•`BF.บั้ม•`")
                 msg.contentMetadata = {'mid': 'u49974a7c78af9f3a8fec3e1dc7c646a9'}
@@ -3924,7 +3935,7 @@ http://line.me/ti/p/~1ove..neverdie
                 msg.contentMetadata = {'mid': 'u76be42d134b394580644e1eed2bed029'}
                 cl.sendMessage(msg)
 #========================================
-            elif msg.text in ["Gu Tar","Kicker","มาหำ"]:
+            elif msg.text in ["เด็กๆ","Kicker","มาหำ"]:
 					G = cl.getGroup(msg.to)
 					info = cl.getGroup(msg.to)
 					G.preventJoinByTicket = False
@@ -4094,7 +4105,7 @@ http://line.me/ti/p/~1ove..neverdie
 					ki.sendText(msg.to,"รบกวนค้างเชิญไว้หน่อยน่ะ ขอออกกลุ่มชั่วคราว จะทำการซิงค์ข้อมูลไลน์ ล็อกอินใหม่\n\nTHANK FRO ADMIN GROUP😊")
 				else:
 					ki.sendText(msg.to,"He declined all invitations")
-            elif msg.text in ["Gu bye","@bye","Bye"]:
+            elif msg.text in ["ชิ้วๆๆ","@bye","Bye"]:
                 if msg.toType == 2:
                    ginfo = cl.getGroup(msg.to)
                 try:
@@ -4206,8 +4217,8 @@ http://line.me/ti/p/~1ove..neverdie
 						except:
 							cl.sendText(msg.to,"Error")
 							
-            elif "??¿ " in msg.text:
-                       nk0 = msg.text.replace("??¿ ","")
+            elif "ผี " in msg.text:
+                       nk0 = msg.text.replace("ผี ","")
                        nk1 = nk0.lstrip()
                        nk2 = nk1.replace("@","")
                        nk3 = nk2.rstrip()
@@ -4432,7 +4443,7 @@ http://line.me/ti/p/~1ove..neverdie
                        except:
                            ke.sendText(msg.to,"Error")
 #==================================================================
-            elif "Man@tag" in msg.text:
+            elif "ทุกคน" in msg.text:
                 group = cl.getGroup(msg.to)
                 k = len(group.members)//100
                 for j in xrange(k+1):
@@ -4636,7 +4647,7 @@ http://line.me/ti/p/~1ove..neverdie
                         else:
                             cl.sendText(msg.to,"Sudah off kak")
 #=============================================
-            elif "Hack tus" in msg.text:
+            elif "ตัส" in msg.text:
                 key = eval(msg.contentMetadata["MENTION"])
                 key1 = key["MENTIONEES"][0]["M"]
                 contact = cl.getContact(key1)
